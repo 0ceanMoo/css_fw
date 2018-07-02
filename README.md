@@ -34,3 +34,11 @@ https://iwb.jp/node-sass-autoprefixer-scss-compile/
   * index.html
   * css ：成果物を吐き出す
 
+### Tmux
+上３つ
+  * README用
+  * pug用
+  * scss用
+下２つ
+  * git用
+  * yarn watch
