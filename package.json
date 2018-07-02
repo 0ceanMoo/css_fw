@@ -10,12 +10,15 @@
     "node-sass": "^4.9.0",
     "node-sass-import": "^2.0.1",
     "postcss": "^6.0.23",
-    "postcss-cli": "^5.0.1"
+    "postcss-cli": "^5.0.1",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6"
   },
   "scripts": {
     "start": "yarn build-css && yarn autoprefixer",
-    "build-css": "node-sass --include-path scss scss/main.scss css/util.css --output-style expanded",
-    "autoprefixer": "postcss --use autoprefixer --no-map css/util.css -d css/"
+    "build-css": "node-sass --include-path assets/scss assets/scss/main.scss public/css/util.css --output-style expanded",
+    "autoprefixer": "postcss --use autoprefixer --no-map public/css/util.css -d css/",
+    "build-pug": "pug assets/pug --out ./public/ --pretty"
   },
   "browserslist": [
     "last 2 versions",
