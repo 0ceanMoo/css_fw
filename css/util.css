@@ -1,0 +1,419 @@
+._w20 {
+  width: 20px;
+}
+
+._w200 {
+  width: 200px;
+}
+
+._w150 {
+  width: 150px;
+}
+
+._w30 {
+  width: 30px;
+}
+
+._w300 {
+  width: 300px;
+}
+
+._w250 {
+  width: 250px;
+}
+
+._w40 {
+  width: 40px;
+}
+
+._w400 {
+  width: 400px;
+}
+
+._w350 {
+  width: 350px;
+}
+
+._w50 {
+  width: 50px;
+}
+
+._w500 {
+  width: 500px;
+}
+
+._w450 {
+  width: 450px;
+}
+
+._w60 {
+  width: 60px;
+}
+
+._w600 {
+  width: 600px;
+}
+
+._w550 {
+  width: 550px;
+}
+
+._w70 {
+  width: 70px;
+}
+
+._w700 {
+  width: 700px;
+}
+
+._w650 {
+  width: 650px;
+}
+
+._w80 {
+  width: 80px;
+}
+
+._w800 {
+  width: 800px;
+}
+
+._w750 {
+  width: 750px;
+}
+
+._w90 {
+  width: 90px;
+}
+
+._w900 {
+  width: 900px;
+}
+
+._w850 {
+  width: 850px;
+}
+
+._w100 {
+  width: 100px;
+}
+
+._w1000 {
+  width: 1000px;
+}
+
+._w950 {
+  width: 950px;
+}
+
+._w30 {
+  width: 30px;
+}
+
+._w40 {
+  width: 40px;
+}
+
+._w50 {
+  width: 50px;
+}
+
+._w60 {
+  width: 60px;
+}
+
+._w70 {
+  width: 70px;
+}
+
+._w80 {
+  width: 80px;
+}
+
+._w90 {
+  width: 90px;
+}
+
+._w100 {
+  width: 100px;
+}
+
+._w5_ {
+  width: 5%;
+}
+
+._w10_ {
+  width: 10%;
+}
+
+._w15_ {
+  width: 15%;
+}
+
+._w20_ {
+  width: 20%;
+}
+
+._w25_ {
+  width: 25%;
+}
+
+._w30_ {
+  width: 30%;
+}
+
+._w35_ {
+  width: 35%;
+}
+
+._w40_ {
+  width: 40%;
+}
+
+._w45_ {
+  width: 45%;
+}
+
+._w50_ {
+  width: 50%;
+}
+
+._w55_ {
+  width: 55%;
+}
+
+._w60_ {
+  width: 60%;
+}
+
+._w65_ {
+  width: 65%;
+}
+
+._w70_ {
+  width: 70%;
+}
+
+._w75_ {
+  width: 75%;
+}
+
+._w80_ {
+  width: 80%;
+}
+
+._w85_ {
+  width: 85%;
+}
+
+._w90_ {
+  width: 90%;
+}
+
+._w95_ {
+  width: 95%;
+}
+
+._w100_ {
+  width: 100%;
+}
+
+._myxs {
+  margin-top: .75rem !important;
+  margin-bottom: .75rem !important;
+}
+
+._mxxs {
+  margin-left: .75rem !important;
+  margin-right: .75rem !important;
+}
+
+._mys {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+._mxs {
+  margin-left: 1.5rem !important;
+  margin-right: 1.5rem !important;
+}
+
+._mym {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+._mxm {
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+}
+
+._myl {
+  margin-top: 4.5rem !important;
+  margin-bottom: 4.5rem !important;
+}
+
+._mxl {
+  margin-left: 4.5rem !important;
+  margin-right: 4.5rem !important;
+}
+
+._myxl {
+  margin-top: 6rem !important;
+  margin-bottom: 6rem !important;
+}
+
+._mxxl {
+  margin-left: 6rem !important;
+  margin-right: 6rem !important;
+}
+
+._pyxs {
+  padding-top: .75rem !important;
+  padding-bottom: .75rem !important;
+}
+
+._pxxs {
+  padding-left: .75rem !important;
+  padding-right: .75rem !important;
+}
+
+._pys {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+._pxs {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+._pym {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+._pxm {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+._pyl {
+  padding-top: 4.5rem !important;
+  padding-bottom: 4.5rem !important;
+}
+
+._pxl {
+  padding-left: 4.5rem !important;
+  padding-right: 4.5rem !important;
+}
+
+._pyxl {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+._pxxl {
+  padding-left: 6rem !important;
+  padding-right: 6rem !important;
+}
+
+._center {
+  text-align: center !important;
+}
+
+._right {
+  text-align: right !important;
+}
+
+._left {
+  text-align: left !important;
+}
+
+._top {
+  vertical-align: top !important;
+}
+
+._middle {
+  vertical-align: middle !important;
+}
+
+._bottom {
+  vertical-align: bottom !important;
+}
+
+._xl {
+  font-size: .6rem;
+}
+
+._sm {
+  font-size: .8rem;
+}
+
+._md {
+  font-size: 1rem;
+}
+
+._lg {
+  font-size: 1.6rem;
+}
+
+._xl {
+  font-size: 2rem;
+}
+
+._bold {
+  font-weight: bold;
+}
+
+._normal {
+  font-weight: normal;
+}
+
+._italic {
+  font-weight: italic;
+}
+
+._white {
+  color: white;
+}
+
+._blue {
+  color: blue;
+}
+
+._red {
+  color: red;
+}
+
+._yellow {
+  color: yellow;
+}
+
+._green {
+  color: green;
+}
+
+._white_ {
+  background-color: white;
+}
+
+._blue_ {
+  background-color: blue;
+}
+
+._red_ {
+  background-color: red;
+}
+
+._yellow_ {
+  background-color: yellow;
+}
+
+._green_ {
+  background-color: green;
+}
+
+._imeOff {
+  ime-mode: disabled;
+}

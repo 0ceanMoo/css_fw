@@ -1,0 +1,26 @@
+{
+  "name": "css_fw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:0ceanMoo/css_fw.git",
+  "author": "Wataru <wakutsu@d-r.co.jp>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^8.6.4",
+    "node-sass": "^4.9.0",
+    "node-sass-import": "^2.0.1",
+    "postcss": "^6.0.23",
+    "postcss-cli": "^5.0.1"
+  },
+  "scripts": {
+    "start": "yarn build-css && yarn autoprefixer",
+    "build-css": "node-sass --include-path scss scss/main.scss css/util.css --output-style expanded",
+    "autoprefixer": "postcss --use autoprefixer --no-map css/util.css -d css/"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not ie < 11",
+    "Android >= 4",
+    "iOS >= 9"
+  ]
+}
