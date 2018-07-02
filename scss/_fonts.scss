@@ -1,0 +1,20 @@
+// ----------------------------------------------
+// font
+// ----------------------------------------------
+// size
+._xl { font-size: .6rem; }
+._sm { font-size: .8rem; }
+._md { font-size: 1rem; }
+._lg { font-size: 1.6rem; }
+._xl { font-size: 2rem; }
+
+._bold   { font-weight: bold; }
+._normal { font-weight: normal; }
+._italic { font-weight: italic; }
+
+//for $i from 10 through 20 {
+//  .fs#{$i} {
+//    font-size:#{$i}px;
+//  }
+//}
+
