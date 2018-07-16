@@ -1,50 +1,135 @@
-// ----------------------------------------------
+// ==============================================
 // space
-// ----------------------------------------------
-// margin
-//._m0   { margin: 0 !important; }
-//._m1   { margin: 1em !important; }
-//._mT1  { margin-top: 1em !important; }
-//._mB1  { margin-bottom: 1em !important; }
-//._my1 { margin-top: 1em !important; margin-bottom: 1em !important; }
-//._mL1  { margin-left: 1em !important; }
-//._mR1  { margin-right: 1em !important; }
-//._mx1 { margin-left: 1em !important; margin-right: 1em !important; }
 //
-//._p0   { padding: 0 !important; }
-//._p1   { padding: 1em !important; }
-//._pT1  { padding-top: 1em !important; }
-//._pB1  { padding-bottom: 1em !important; }
-//._py1 { padding-top: 1em !important; padding-bottom: 1em !important; }
-//._pL1  { padding-left: 1em !important; }
-//._pR1  { padding-right: 1em !important; }
-//._px1 { padding-left: 1em !important; padding-right: 1em !important; }
+// 5段階(xl,l,m,s,xs)でサイズ展開する
+// 具体的な数値で持たせるかは思案中
+//
+// ==============================================
 
-//@for $i from 1 through 20 {
-//  .m#{$i * 5} { margin:#{$i * 5}px; }
-//  .mT#{$i * 5} { margin-top:#{$i * 5}px; }
-//  .mB#{$i * 5} { margin-bottom:#{$i * 5}px; }
-//  .p#{$i * 5} { padding:#{$i * 5}px; }
-//}
+// --------------
+// margin
+// --------------
+._m-0   { margin:       0     !important; }
+._mt-0  { margin-top:   0     !important; }
+._mb-0  { margin-bottom:0     !important; }
+._ml-0  { margin-left:  0     !important; }
+._mr-0  { margin-right: 0     !important; }
+._mx-0  { margin-left:  0     !important; margin-right: 0     !important; }
+._my-0  { margin-top:   0     !important; margin-bottom:0     !important; }
+._mx-a  { margin-left:  auto  !important; margin-right: auto  !important; }
 
-._myxs { margin-top:.75rem !important; margin-bottom:.75rem !important; }
-._mxxs { margin-left:.75rem !important;margin-right:.75rem !important; }
-._mys  { margin-top:1.5rem !important; margin-bottom:1.5rem !important; }
-._mxs  { margin-left:1.5rem !important;margin-right:1.5rem !important; }
-._mym  { margin-top:3rem !important;   margin-bottom:3rem !important; }
-._mxm  { margin-left:3rem !important;  margin-right:3rem !important; }
-._myl  { margin-top:4.5rem !important; margin-bottom:4.5rem !important; }
-._mxl  { margin-left:4.5rem !important;margin-right:4.5rem !important; }
-._myxl { margin-top:6rem !important;   margin-bottom:6rem !important; }
-._mxxl { margin-left:6rem !important;  margin-right:6rem !important; }
+$mp_xs : .75rem;
+$mp_s  : 1.5rem;
+$mp_m  : 3rem;
+$mp_l  : 4.5rem;
+$mp_xl : 6rem;
 
-._pyxs { padding-top:.75rem !important;  padding-bottom:.75rem !important; }
-._pxxs { padding-left:.75rem !important; padding-right:.75rem !important; }
-._pys  { padding-top:1.5rem !important;  padding-bottom:1.5rem !important; }
-._pxs  { padding-left:1.5rem !important; padding-right:1.5rem !important; }
-._pym  { padding-top:3rem !important;    padding-bottom:3rem !important; }
-._pxm  { padding-left:3rem !important;   padding-right:3rem !important; }
-._pyl  { padding-top:4.5rem !important;  padding-bottom:4.5rem !important; }
-._pxl  { padding-left:4.5rem !important; padding-right:4.5rem !important; }
-._pyxl { padding-top:6rem !important;    padding-bottom:6rem !important; }
-._pxxl { padding-left:6rem !important;   padding-right:6rem !important; }
+// margin
+._m-xs  { margin: $mp_xs !important; }
+._m-s   { margin: $mp_s  !important; }
+._m-m   { margin: $mp_m  !important; }
+._m-l   { margin: $mp_l  !important; }
+._m-xl  { margin: $mp_xl !important; }
+
+// margin t,b
+._mt-xs { margin-top:   $mp_xs !important; }
+._mb-xs { margin-bottom:$mp_xs !important; }
+._mt-s  { margin-top:   $mp_s  !important; }
+._mb-s  { margin-bottom:$mp_s  !important; }
+._mt-m  { margin-top:   $mp_m  !important; }
+._mb-m  { margin-bottom:$mp_m  !important; }
+._mt-l  { margin-top:   $mp_l  !important; }
+._mb-l  { margin-bottom:$mp_l  !important; }
+._mt-xl { margin-top:   $mp_xl !important; }
+._mb-xl { margin-bottom:$mp_xl !important; }
+
+// margin LR
+._ml-xs { margin-left:  $mp_xs !important; }
+._mr-xs { margin-right: $mp_xs !important; }
+._ml-s  { margin-left:  $mp_s  !important; }
+._mr-s  { margin-right: $mp_s  !important; }
+._ml-m  { margin-left:  $mp_m  !important; }
+._mr-m  { margin-right: $mp_m  !important; }
+._ml-l  { margin-left:  $mp_l  !important; }
+._mr-l  { margin-right: $mp_l  !important; }
+._ml-xl { margin-left:  $mp_xl !important; }
+._mr-xl { margin-right: $mp_xl !important; }
+
+// margin x,y
+._mx-xs { margin-left: $mp_xs !important; margin-right: $mp_xs  !important; }
+._my-xs { margin-top:  $mp_xs !important; margin-bottom:$mp_xs  !important; }
+._mx-s  { margin-left: $mp_s  !important; margin-right: $mp_s   !important; }
+._my-s  { margin-top:  $mp_s  !important; margin-bottom:$mp_s   !important; }
+._mx-m  { margin-left: $mp_m  !important; margin-right: $mp_m   !important; }
+._my-m  { margin-top:  $mp_m  !important; margin-bottom:$mp_m   !important; }
+._mx-l  { margin-left: $mp_l  !important; margin-right: $mp_l   !important; }
+._my-l  { margin-top:  $mp_l  !important; margin-bottom:$mp_l   !important; }
+._mx-xl { margin-left: $mp_xl !important; margin-right: $mp_xl  !important; }
+._my-xl { margin-top:  $mp_xl !important; margin-bottom:$mp_xl  !important; }
+
+
+// --------------
+// padding
+// --------------
+._p-0   { padding:        0 !important; }
+._pt-0  { padding-top:    0 !important; }
+._pb-0  { padding-bottom: 0 !important; }
+._pl-0  { padding-left:   0 !important; }
+._pr-0  { padding-right:  0 !important; }
+._px-0  { padding-left:   0 !important; padding-right:  0 !important; }
+._py-0  { padding-top:    0 !important; padding-bottom: 0 !important; }
+
+// padding
+._p-xs { padding: $mp_xs !important; }
+._p-s  { padding: $mp_s  !important; }
+._p-m  { padding: $mp_m  !important; }
+._p-l  { padding: $mp_l  !important; }
+._p-xl { padding: $mp_xl !important; }
+
+// padding t,b
+._pt-xs { padding-top:    $mp_xs !important; }
+._pb-xs { padding-bottom: $mp_xs !important; }
+._pt-s  { padding-top:    $mp_s  !important; }
+._pb-s  { padding-bottom: $mp_s  !important; }
+._pt-m  { padding-top:    $mp_m  !important; }
+._pb-m  { padding-bottom: $mp_m  !important; }
+._pt-l  { padding-top:    $mp_l  !important; }
+._pb-l  { padding-bottom: $mp_l  !important; }
+._pt-xl { padding-top:    $mp_xl !important; }
+._pb-xl { padding-bottom: $mp_xl !important; }
+
+// padding LR
+._pl-xs { padding-left: $mp_xs  !important; }
+._pr-xs { padding-right:$mp_xs  !important; }
+._pl-s  { padding-left: $mp_s   !important; }
+._pr-s  { padding-right:$mp_s   !important; }
+._pl-m  { padding-left: $mp_m   !important; }
+._pr-m  { padding-right:$mp_m   !important; }
+._pl-l  { padding-left: $mp_l   !important; }
+._pr-l  { padding-right:$mp_l   !important; }
+._pl-xl { padding-left: $mp_xl  !important; }
+._pr-xl { padding-right:$mp_xl  !important; }
+
+// padding x,y
+._px-xs { padding-left:$mp_xs !important; padding-right:  $mp_xs  !important; }
+._py-xs { padding-top: $mp_xs !important; padding-bottom: $mp_xs  !important; }
+._px-s  { padding-left:$mp_s  !important; padding-right:  $mp_s   !important; }
+._py-s  { padding-top: $mp_s  !important; padding-bottom: $mp_s   !important; }
+._px-m  { padding-left:$mp_m  !important; padding-right:  $mp_m   !important; }
+._py-m  { padding-top: $mp_m  !important; padding-bottom: $mp_m   !important; }
+._px-l  { padding-left:$mp_l  !important; padding-right:  $mp_l   !important; }
+._py-l  { padding-top: $mp_l  !important; padding-bottom: $mp_l   !important; }
+._px-xl { padding-left:$mp_xl !important; padding-right:  $mp_xl  !important; }
+._py-xl { padding-top: $mp_xl !important; padding-bottom: $mp_xl  !important; }
+
+// margin & padding
+@for $i from 1 through 4 {
+  $val : #{$i * 5};
+  ._m-#{$val}px   { margin:       #{$val}px !important; }
+  ._mt-#{$val}px  { margin-top:   #{$val}px !important; }
+  ._mb-#{$val}px  { margin-bottom:#{$val}px !important; }
+  ._ml-#{$val}px  { margin-left:  #{$val}px !important; }
+  ._mr-#{$val}px  { margin-right: #{$val}px !important; }
+  ._mx-#{$val}px  { margin-left:  #{$val}px !important; margin-right: #{$val}px !important; }
+  ._my-#{$val}px  { margin-top:   #{$val}px !important; margin-bottom:#{$val}px !important; }
+}
