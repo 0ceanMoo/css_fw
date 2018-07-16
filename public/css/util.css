@@ -760,27 +760,27 @@
 }
 
 ._c-red {
-  color: #B03060;
+  color: #FF4136;
 }
 
 ._c-orange {
-  color: #FE9A76;
+  color: #FF851B;
 }
 
 ._c-yellow {
-  color: #FFD700;
+  color: #FFDC00;
 }
 
 ._c-green {
-  color: #016936;
+  color: #2ECC40;
 }
 
 ._c-teal {
-  color: #008080;
+  color: #39CCCC;
 }
 
 ._c-blue {
-  color: #0E6EB8;
+  color: #0074D9;
 }
 
 ._c-pink {
@@ -804,23 +804,23 @@
 }
 
 ._bg-red {
-  background-color: #B03060;
+  background-color: #FF4136;
 }
 
 ._bg-orange {
-  background-color: #FE9A76;
+  background-color: #FF851B;
 }
 
 ._bg-yellow {
-  background-color: #FFD700;
+  background-color: #FFDC00;
 }
 
 ._bg-green {
-  background-color: #016936;
+  background-color: #2ECC40;
 }
 
 ._bg-blue {
-  background-color: #0E6EB8;
+  background-color: #0074D9;
 }
 
 ._bg-pink {
@@ -844,19 +844,19 @@
 }
 
 ._info {
-  color: #0E6EB8;
+  color: #0074D9;
 }
 
 ._success {
-  color: #016936;
+  color: #2ECC40;
 }
 
 ._warn {
-  color: #FFD700;
+  color: #FFDC00;
 }
 
 ._error {
-  color: #B03060;
+  color: #FF4136;
 }
 
 ._c-eee {
