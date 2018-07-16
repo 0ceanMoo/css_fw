@@ -27,7 +27,7 @@ https://iwb.jp/node-sass-autoprefixer-scss-compile/
 * assets
   * scss：ソース置き場
     * main.scss
-    * _xxx.scss
+    * ＿xxx.scss
   * pug
     * index.pug
 * public
@@ -42,3 +42,25 @@ https://iwb.jp/node-sass-autoprefixer-scss-compile/
 下２つ
   * git用
   * yarn watch
+
+
+### 脱bootstrap
+https://www.flexboxpatterns.com/
+
+色んなフレームワーク見たけど
+フレームワークだけでは、部分的に足りないとこが出てくる
+結局細かい所は自分で書かないとダメ
+
+ある程度カバーしてくれるだけでいいんだけど、これだったら基礎だけやってもらって
+後は差し替えってのが楽になってくる。
+
+レイアウトは、Gridレイアウトがあるから、CSSで大丈夫だ
+ボタンやフォームは、フレームワークに面倒見てもらいたい
+コンポネントもフレームワークに面倒見てもらいたい
+
+っが、全てを満たすフレームワークがないので、結局自分で書く。
+統一感がなくなる。
+
+無限ループだ。
+
+
