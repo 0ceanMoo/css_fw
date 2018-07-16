@@ -122,7 +122,10 @@ $mp_xl : 6rem;
 ._px-xl { padding-left:$mp_xl !important; padding-right:  $mp_xl  !important; }
 ._py-xl { padding-top: $mp_xl !important; padding-bottom: $mp_xl  !important; }
 
+// --------------
 // margin & padding
+// 5-20pxまで、5px間隔で作る
+// --------------
 @for $i from 1 through 4 {
   $val : #{$i * 5};
   ._m-#{$val}px   { margin:       #{$val}px !important; }
