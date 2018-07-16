@@ -800,15 +800,15 @@
 }
 
 ._success {
-  color: green;
+  color: #23d160;
 }
 
 ._warn {
-  color: yellow;
+  color: #ffdd57;
 }
 
 ._error {
-  color: red;
+  color: #ff3860;
 }
 
 ._ime-off {

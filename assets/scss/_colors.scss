@@ -13,6 +13,6 @@
 ._bg-yellow { background-color: yellow; }
 ._bg-green  { background-color: green; }
 
-._success { color: green; }
-._warn    { color: yellow; }
-._error   { color: red; }
+._success { color: hsl(141, 71%, 48%);  }
+._warn    { color: hsl(48, 100%, 67%);  }
+._error   { color: hsl(348, 100%, 61%); }
