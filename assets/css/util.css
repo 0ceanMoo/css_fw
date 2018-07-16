@@ -759,44 +759,56 @@
   font-weight: italic;
 }
 
-._white {
+._c-white {
   color: white;
 }
 
-._blue {
+._c-blue {
   color: blue;
 }
 
-._red {
+._c-red {
   color: red;
 }
 
-._yellow {
+._c-yellow {
   color: yellow;
 }
 
-._green {
+._c-green {
   color: green;
 }
 
-._white_ {
+._bg-white {
   background-color: white;
 }
 
-._blue_ {
+._bg-blue {
   background-color: blue;
 }
 
-._red_ {
+._bg-red {
   background-color: red;
 }
 
-._yellow_ {
+._bg-yellow {
   background-color: yellow;
 }
 
-._green_ {
+._bg-green {
   background-color: green;
+}
+
+._success {
+  color: green;
+}
+
+._warn {
+  color: yellow;
+}
+
+._error {
+  color: red;
 }
 
 ._ime-off {

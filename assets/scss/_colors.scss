@@ -1,14 +1,18 @@
 // ----------------------------------------------
 // color
 // ----------------------------------------------
-._white   { color: white; }
-._blue    { color: blue; }
-._red     { color: red; }
-._yellow  { color: yellow; }
-._green   { color: green; }
+._c-white   { color: white; }
+._c-blue    { color: blue; }
+._c-red     { color: red; }
+._c-yellow  { color: yellow; }
+._c-green   { color: green; }
 
-._white_  { background-color: white; }
-._blue_   { background-color: blue; }
-._red_    { background-color: red; }
-._yellow_ { background-color: yellow; }
-._green_  { background-color: green; }
+._bg-white  { background-color: white; }
+._bg-blue   { background-color: blue; }
+._bg-red    { background-color: red; }
+._bg-yellow { background-color: yellow; }
+._bg-green  { background-color: green; }
+
+._success { color: green; }
+._warn    { color: yellow; }
+._error   { color: red; }
