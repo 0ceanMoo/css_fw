@@ -1,113 +1,58 @@
-// ----------------------------------------------
-// color
-// https://clrs.cc/
-// ----------------------------------------------
-$red            : #FF4136;
-$orange         : #FF851B;
-$yellow         : #FFDC00;
-$olive          : #3D9970;
-$green          : #2ECC40;
-$lime           : #01FF70;
-$teal           : #39CCCC;
-$blue           : #0074D9;
-$navy           : #001f3f;
-$violet         : #EE82EE;
-$purple         : #B413EC;
-$pink           : #FF1493;
-$brown          : #A52A2A;
-$grey           : #A0A0A0;
-$black          : #000000;
-$white          : #fff;
+/* ==============================================
+  Colors
+============================================== */
 
-//
-$primaryColor   : $pink;
-$secondaryColor : $grey;
+/* message colors
+---------------------------------------------- */
+.#{$prefix}info   { color: $info;   }
+.#{$prefix}success{ color: $success;}
+.#{$prefix}warn   { color: $warn;   }
+.#{$prefix}error  { color: $error;  }
 
-//
-$info           : $blue;
-$success        : $green;
-$warn           : $yellow;
-$error          : $red;
+/* font & background colors
+---------------------------------------------- */
+$cbc: (
+  c : color,
+  bg: background-color
+);
 
-._c-red     { color: $red;    }
-._c-orange  { color: $orange;  }
-._c-yellow  { color: $yellow; }
-._c-green   { color: $green;  }
-._c-teal    { color: $teal;  }
-._c-blue    { color: $blue;   }
-._c-pink    { color: $pink;   }
-._c-brown   { color: $brown;  }
-._c-grey    { color: $grey;  }
-._c-black   { color: $black;  }
-._c-white   { color: $white;  }
+@each $e, $p in $cbc {
+  .#{$prefix}#{$e}-red    { #{$p}: #{$red};   }
+  .#{$prefix}#{$e}-orange { #{$p}: #{$orange};}
+  .#{$prefix}#{$e}-yellow { #{$p}: #{$yellow};}
+  .#{$prefix}#{$e}-green  { #{$p}: #{$green}; }
+  .#{$prefix}#{$e}-teal   { #{$p}: #{$teal};  }
+  .#{$prefix}#{$e}-blue   { #{$p}: #{$blue};  }
+  .#{$prefix}#{$e}-pink   { #{$p}: #{$pink};  }
+  .#{$prefix}#{$e}-brown  { #{$p}: #{$brown}; }
+  .#{$prefix}#{$e}-grey   { #{$p}: #{$grey};  }
+  .#{$prefix}#{$e}-black  { #{$p}: #{$black}; }
+  .#{$prefix}#{$e}-white  { #{$p}: #{$white}; }
 
-._bg-red    { background-color: $red;   }
-._bg-orange { background-color: $orange; }
-._bg-yellow { background-color: $yellow;}
-._bg-green  { background-color: $green; }
-._bg-blue   { background-color: $blue;  }
-._bg-pink   { background-color: $pink;  }
-._bg-brown  { background-color: $brown; }
-._bg-grey   { background-color: $grey; }
-._bg-black  { background-color: $black; }
-._bg-white  { background-color: $white; }
+  .#{$prefix}#{$e}-eee { #{$p}: #eee; }
+  .#{$prefix}#{$e}-ccc { #{$p}: #ccc; }
+  .#{$prefix}#{$e}-999 { #{$p}: #999; }
+  .#{$prefix}#{$e}-666 { #{$p}: #666; }
+  .#{$prefix}#{$e}-333 { #{$p}: #333; }
 
-._info    { color: $info;   }
-._success { color: $success;}
-._warn    { color: $warn;   }
-._error   { color: $error;  }
+  .#{$prefix}#{$e}-fcc { #{$p}: #fcc; }
+  .#{$prefix}#{$e}-cfc { #{$p}: #cfc; }
+  .#{$prefix}#{$e}-ccf { #{$p}: #ccf; }
+  .#{$prefix}#{$e}-cff { #{$p}: #cff; }
+  .#{$prefix}#{$e}-fcf { #{$p}: #fcf; }
+  .#{$prefix}#{$e}-ffc { #{$p}: #ffc; }
 
-._c-eee   { color: #eee; }
-._c-ccc   { color: #ccc; }
-._c-999   { color: #999; }
-._c-666   { color: #666; }
-._c-333   { color: #333; }
+  .#{$prefix}#{$e}-f99 { #{$p}: #f99; }
+  .#{$prefix}#{$e}-9f9 { #{$p}: #9f9; }
+  .#{$prefix}#{$e}-99f { #{$p}: #99f; }
+  .#{$prefix}#{$e}-9ff { #{$p}: #9ff; }
+  .#{$prefix}#{$e}-f9f { #{$p}: #f9f; }
+  .#{$prefix}#{$e}-ff9 { #{$p}: #ff9; }
 
-._bg-eee   { background-color: #eee; }
-._bg-ccc   { background-color: #ccc; }
-._bg-999   { background-color: #999; }
-._bg-666   { background-color: #666; }
-._bg-333   { background-color: #333; }
-
-._c-fcc   { color: #fcc; }
-._c-cfc   { color: #cfc; }
-._c-ccf   { color: #ccf; }
-._c-cff   { color: #cff; }
-._c-fcf   { color: #fcf; }
-._c-ffc   { color: #ffc; }
-
-._bg-fcc   { background-color: #fcc; }
-._bg-cfc   { background-color: #cfc; }
-._bg-ccf   { background-color: #ccf; }
-._bg-cff   { background-color: #cff; }
-._bg-fcf   { background-color: #fcf; }
-._bg-ffc   { background-color: #ffc; }
-
-._c-f99   { color: #f99; }
-._c-9f9   { color: #9f9; }
-._c-99f   { color: #99f; }
-._c-9ff   { color: #9ff; }
-._c-f9f   { color: #f9f; }
-._c-ff9   { color: #ff9; }
-
-._bg-f99   { background-color: #f99; }
-._bg-9f9   { background-color: #9f9; }
-._bg-99f   { background-color: #99f; }
-._bg-9ff   { background-color: #9ff; }
-._bg-f9f   { background-color: #f9f; }
-._bg-ff9   { background-color: #ff9; }
-
-._c-c99   { color: #c99; }
-._c-9c9   { color: #9c9; }
-._c-99c   { color: #99c; }
-._c-9cc   { color: #9cc; }
-._c-c9c   { color: #c9c; }
-._c-cc9   { color: #cc9; }
-
-._bg-c99   { background-color: #c99; }
-._bg-9c9   { background-color: #9c9; }
-._bg-99c   { background-color: #99c; }
-._bg-9cc   { background-color: #9cc; }
-._bg-c9c   { background-color: #c9c; }
-._bg-cc9   { background-color: #cc9; }
-
+  .#{$prefix}#{$e}-c99 { #{$p}: #c99; }
+  .#{$prefix}#{$e}-9c9 { #{$p}: #9c9; }
+  .#{$prefix}#{$e}-99c { #{$p}: #99c; }
+  .#{$prefix}#{$e}-9cc { #{$p}: #9cc; }
+  .#{$prefix}#{$e}-c9c { #{$p}: #c9c; }
+  .#{$prefix}#{$e}-cc9 { #{$p}: #cc9; }
+}
