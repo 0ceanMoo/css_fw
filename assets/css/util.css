@@ -1,15 +1,44 @@
-@charset "UTF-8";
 /* ==============================================
-  colors
-  https://clrs.cc/
+  visual formating model
 ============================================== */
-/* site colors
+/* display
 ---------------------------------------------- */
-/* message colors
+._block {
+  display: block        !important;
+}
+
+._iblock {
+  display: inline-block !important;
+}
+
+._inline {
+  display: inline       !important;
+}
+
+._hidden {
+  display: hidden       !important;
+}
+
+/* position
 ---------------------------------------------- */
-/* ==============================================
-  box model
-============================================== */
+._fixed {
+  position: fixed;
+}
+
+._relative {
+  position: relative;
+}
+
+._absolute {
+  position: absolute;
+}
+
+._flex {
+  position: flex;
+}
+
+/* width
+---------------------------------------------- */
 ._w-20px {
   width: 20px !important;
 }
@@ -198,27 +227,22 @@
   width: 100% !important;
 }
 
-._block {
-  display: block        !important;
+/* vertical-align
+---------------------------------------------- */
+._top {
+  vertical-align: top     !important;
 }
 
-._iblock {
-  display: inline-block !important;
+._middle {
+  vertical-align: middle  !important;
 }
 
-._inline {
-  display: inline       !important;
-}
-
-._hidden {
-  display: hidden       !important;
+._bottom {
+  vertical-align: bottom  !important;
 }
 
 /* ==============================================
   Box model
-
-  5段階(xl,l,m,s,xs)でサイズ展開する
-  具体的な数値で持たせるかは思案中
 ============================================== */
 /* margin
 ---------------------------------------------- */
@@ -590,7 +614,6 @@
 }
 
 /* margin & padding
-  5-20pxまで、5px間隔で作る
 ---------------------------------------------- */
 ._m-5px {
   margin: 5px !important;
@@ -712,12 +735,17 @@
   margin-bottom: 20px !important;
 }
 
-._xl {
-  font-size: .6rem;
+/* ==============================================
+  fonts
+============================================== */
+/* size
+---------------------------------------------- */
+._xs {
+  font-size: 0.6rem;
 }
 
 ._sm {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 ._md {
@@ -732,6 +760,8 @@
   font-size: 2rem;
 }
 
+/* weight
+---------------------------------------------- */
 ._bold {
   font-weight: bold;
 }
@@ -744,6 +774,29 @@
   font-weight: italic;
 }
 
+/* ==============================================
+  Colors
+============================================== */
+/* message colors
+---------------------------------------------- */
+._info {
+  color: #0074D9;
+}
+
+._success {
+  color: #2ECC40;
+}
+
+._warn {
+  color: #FFDC00;
+}
+
+._error {
+  color: #FF4136;
+}
+
+/* font & background colors
+---------------------------------------------- */
 ._c-red {
   color: #FF4136;
 }
@@ -785,63 +838,7 @@
 }
 
 ._c-white {
-  color: #fff;
-}
-
-._bg-red {
-  background-color: #FF4136;
-}
-
-._bg-orange {
-  background-color: #FF851B;
-}
-
-._bg-yellow {
-  background-color: #FFDC00;
-}
-
-._bg-green {
-  background-color: #2ECC40;
-}
-
-._bg-blue {
-  background-color: #0074D9;
-}
-
-._bg-pink {
-  background-color: #FF1493;
-}
-
-._bg-brown {
-  background-color: #A52A2A;
-}
-
-._bg-grey {
-  background-color: #A0A0A0;
-}
-
-._bg-black {
-  background-color: #000000;
-}
-
-._bg-white {
-  background-color: #fff;
-}
-
-._info {
-  color: #0074D9;
-}
-
-._success {
-  color: #2ECC40;
-}
-
-._warn {
-  color: #FFDC00;
-}
-
-._error {
-  color: #FF4136;
+  color: #ffffff;
 }
 
 ._c-eee {
@@ -862,26 +859,6 @@
 
 ._c-333 {
   color: #333;
-}
-
-._bg-eee {
-  background-color: #eee;
-}
-
-._bg-ccc {
-  background-color: #ccc;
-}
-
-._bg-999 {
-  background-color: #999;
-}
-
-._bg-666 {
-  background-color: #666;
-}
-
-._bg-333 {
-  background-color: #333;
 }
 
 ._c-fcc {
@@ -908,30 +885,6 @@
   color: #ffc;
 }
 
-._bg-fcc {
-  background-color: #fcc;
-}
-
-._bg-cfc {
-  background-color: #cfc;
-}
-
-._bg-ccf {
-  background-color: #ccf;
-}
-
-._bg-cff {
-  background-color: #cff;
-}
-
-._bg-fcf {
-  background-color: #fcf;
-}
-
-._bg-ffc {
-  background-color: #ffc;
-}
-
 ._c-f99 {
   color: #f99;
 }
@@ -956,30 +909,6 @@
   color: #ff9;
 }
 
-._bg-f99 {
-  background-color: #f99;
-}
-
-._bg-9f9 {
-  background-color: #9f9;
-}
-
-._bg-99f {
-  background-color: #99f;
-}
-
-._bg-9ff {
-  background-color: #9ff;
-}
-
-._bg-f9f {
-  background-color: #f9f;
-}
-
-._bg-ff9 {
-  background-color: #ff9;
-}
-
 ._c-c99 {
   color: #c99;
 }
@@ -1002,6 +931,118 @@
 
 ._c-cc9 {
   color: #cc9;
+}
+
+._bg-red {
+  background-color: #FF4136;
+}
+
+._bg-orange {
+  background-color: #FF851B;
+}
+
+._bg-yellow {
+  background-color: #FFDC00;
+}
+
+._bg-green {
+  background-color: #2ECC40;
+}
+
+._bg-teal {
+  background-color: #39CCCC;
+}
+
+._bg-blue {
+  background-color: #0074D9;
+}
+
+._bg-pink {
+  background-color: #FF1493;
+}
+
+._bg-brown {
+  background-color: #A52A2A;
+}
+
+._bg-grey {
+  background-color: #A0A0A0;
+}
+
+._bg-black {
+  background-color: #000000;
+}
+
+._bg-white {
+  background-color: #ffffff;
+}
+
+._bg-eee {
+  background-color: #eee;
+}
+
+._bg-ccc {
+  background-color: #ccc;
+}
+
+._bg-999 {
+  background-color: #999;
+}
+
+._bg-666 {
+  background-color: #666;
+}
+
+._bg-333 {
+  background-color: #333;
+}
+
+._bg-fcc {
+  background-color: #fcc;
+}
+
+._bg-cfc {
+  background-color: #cfc;
+}
+
+._bg-ccf {
+  background-color: #ccf;
+}
+
+._bg-cff {
+  background-color: #cff;
+}
+
+._bg-fcf {
+  background-color: #fcf;
+}
+
+._bg-ffc {
+  background-color: #ffc;
+}
+
+._bg-f99 {
+  background-color: #f99;
+}
+
+._bg-9f9 {
+  background-color: #9f9;
+}
+
+._bg-99f {
+  background-color: #99f;
+}
+
+._bg-9ff {
+  background-color: #9ff;
+}
+
+._bg-f9f {
+  background-color: #f9f;
+}
+
+._bg-ff9 {
+  background-color: #ff9;
 }
 
 ._bg-c99 {
