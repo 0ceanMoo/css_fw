@@ -1,5 +1,5 @@
 // ----------------------------------------------
 // etc
 // ----------------------------------------------
-._ime-off { ime-mode: disabled;   }
-._nowrap  { white-space: nowrap;  }
+.#{$prefix}ime-off { ime-mode: disabled;   }
+.#{$prefix}nowrap  { white-space: nowrap;  }
