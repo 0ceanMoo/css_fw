@@ -1,0 +1,43 @@
+$prefix : "_";
+
+/* ==============================================
+  colors
+  https://clrs.cc/
+============================================== */
+$red            : #FF4136;
+$orange         : #FF851B;
+$yellow         : #FFDC00;
+$olive          : #3D9970;
+$green          : #2ECC40;
+$lime           : #01FF70;
+$teal           : #39CCCC;
+$blue           : #0074D9;
+$navy           : #001f3f;
+$violet         : #EE82EE;
+$purple         : #B413EC;
+$pink           : #FF1493;
+$brown          : #A52A2A;
+$grey           : #A0A0A0;
+$black          : #000000;
+$white          : #fff;
+
+/* site colors
+---------------------------------------------- */
+$primaryColor   : $pink;
+$secondaryColor : $grey;
+
+/* message colors
+---------------------------------------------- */
+$info           : $blue;
+$success        : $green;
+$warn           : $yellow;
+$error          : $red;
+
+/* ==============================================
+  box model
+============================================== */
+$box_model_xs : .75rem;
+$box_model_s  : 1.5rem;
+$box_model_m  : 3rem;
+$box_model_l  : 4.5rem;
+$box_model_xl : 6rem;

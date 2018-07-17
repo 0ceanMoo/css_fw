@@ -1,3 +1,15 @@
+@charset "UTF-8";
+/* ==============================================
+  colors
+  https://clrs.cc/
+============================================== */
+/* site colors
+---------------------------------------------- */
+/* message colors
+---------------------------------------------- */
+/* ==============================================
+  box model
+============================================== */
 ._w-20px {
   width: 20px !important;
 }
@@ -202,6 +214,14 @@
   display: hidden       !important;
 }
 
+/* ==============================================
+  Box model
+
+  5段階(xl,l,m,s,xs)でサイズ展開する
+  具体的な数値で持たせるかは思案中
+============================================== */
+/* margin
+---------------------------------------------- */
 ._m-0 {
   margin: 0     !important;
 }
@@ -387,6 +407,8 @@
   margin-bottom: 6rem !important;
 }
 
+/* padding
+---------------------------------------------- */
 ._p-0 {
   padding: 0 !important;
 }
@@ -567,6 +589,9 @@
   padding-bottom: 6rem !important;
 }
 
+/* margin & padding
+  5-20pxまで、5px間隔で作る
+---------------------------------------------- */
 ._m-5px {
   margin: 5px !important;
 }
@@ -685,46 +710,6 @@
 ._my-20px {
   margin-top: 20px !important;
   margin-bottom: 20px !important;
-}
-
-._center {
-  text-align: center      !important;
-}
-
-._right {
-  text-align: right       !important;
-}
-
-._left {
-  text-align: left        !important;
-}
-
-._top {
-  vertical-align: top     !important;
-}
-
-._middle {
-  vertical-align: middle  !important;
-}
-
-._bottom {
-  vertical-align: bottom  !important;
-}
-
-._fixed {
-  position: fixed;
-}
-
-._relative {
-  position: relative;
-}
-
-._absolute {
-  position: absolute;
-}
-
-._flex {
-  position: flex;
 }
 
 ._xl {
@@ -1041,12 +1026,4 @@
 
 ._bg-cc9 {
   background-color: #cc9;
-}
-
-._ime-off {
-  ime-mode: disabled;
-}
-
-._nowrap {
-  white-space: nowrap;
 }
