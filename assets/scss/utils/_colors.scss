@@ -65,7 +65,8 @@
 .#{$prefix}purple { color: #{$purple};}
 .#{$prefix}pink   { color: #{$pink};  }
 .#{$prefix}brown  { color: #{$brown}; }
-.#{$prefix}grey   { color: #{$grey};  }
+.#{$prefix}gray   { color: #{$gray};  }
+.#{$prefix}silver { color: #{$silver};  }
 .#{$prefix}black  { color: #{$black}; }
 .#{$prefix}white  { color: #{$black}; }
 
@@ -84,7 +85,8 @@
 .#{$prefix}Purple { color: $white; background: $purple; }
 .#{$prefix}Pink   { color: $black; background: $pink;   }
 .#{$prefix}Brown  { color: $white; background: $brown;  }
-.#{$prefix}Grey   { color: $black; background: $grey;   }
+.#{$prefix}Gray   { color: $white; background: $gray;   }
+.#{$prefix}Silver { color: $black; background: $silver; }
 .#{$prefix}Black  { color: $white; background: $black;  }
 .#{$prefix}White  { color: $black; background: $white;  }
 
@@ -93,7 +95,7 @@
 .#{$prefix}Info   { @extend .#{$prefix}Blue;  }
 .#{$prefix}Warn   { @extend .#{$prefix}Yellow;}
 .#{$prefix}Error  { @extend .#{$prefix}Red;   }
-.#{$prefix}Ok     { @extend .#{$prefix}Green; }
+.#{$prefix}Ok     { @extend .#{$prefix}Teal; }
 .#{$prefix}Ng     { @extend .#{$prefix}Pink;  }
 
 

@@ -1,26 +1,87 @@
 // Card
 //------------------------------
-@mixin button($c: $grey, $bg: $white)
+@mixin button($c: $black, $bg: $white, $bd: null, $h_c:null, $h_bg:null)
+  @if not $h_c
+    $h_c: $bg
+  @if not $h_bg
+    $h_bg: $c
+
+  @if $bd
+    // bd=1にると、背景色
+    @if $bd == 1
+      $bd: $bg
+  @else
+    // bdでボーダーの色指定しなければ、文字色
+    $bd: $c
+
   display: inline-block
   margin: 0
   padding: .4rem 1.2rem
   margin: 0
   border: 1px solid
+  border-color: $bd
   color: $c
-  background: $bg 
+  background: $bg
   cursor: pointer
-  transition: .4s 
+  transition: .4s
   &:hover
-    color: $bg 
-    background: $c
+    color: $h_c
+    background: $h_bg
 
-._Button
-  @include button($grey)
-._Button-blue
+.#{$prefix}Btn
+  @include button
+
+.#{$prefix}Btn-Black
+  @include button($white, $black)
+
+.#{$prefix}Btn-red
+  @include button($red)
+.#{$prefix}Btn-Red
+  @include button($white, $red, 1)
+
+.#{$prefix}Btn-blue
   @include button($blue)
-._Button-Blue
-  @include button($white, $blue)
-._Button-success
-  @include button($success)
-._Button-Success
-  @include button($white, $success)
+.#{$prefix}Btn-Blue
+  @include button($white, $blue, 1)
+
+.#{$prefix}Btn-orange
+  @include button($orange)
+.#{$prefix}Btn-Orange
+  @include button($white, $orange, 1)
+
+.#{$prefix}Btn-teal
+  @include button($teal)
+.#{$prefix}Btn-Teal
+  @include button($white, $teal, 1)
+
+.#{$prefix}Btn-yellow
+  @include button($gray, $white, $yellow, $black, $yellow)
+.#{$prefix}Btn-Yellow
+  @include button($black, $yellow, 1, $gray, $white)
+
+.#{$prefix}Btn-pink
+  @include button($gray, $white, $pink, $black, $pink)
+.#{$prefix}Btn-Pink
+  @include button($black, $pink, 1, $gray, $white)
+
+.#{$prefix}Btn-info
+  @extend .#{$prefix}Btn-blue
+.#{$prefix}Btn-Info
+  @extend .#{$prefix}Btn-Blue
+.#{$prefix}Btn-warn
+  @extend .#{$prefix}Btn-yellow
+.#{$prefix}Btn-Warn
+  @extend .#{$prefix}Btn-Yellow
+.#{$prefix}Btn-error
+  @extend .#{$prefix}Btn-red
+.#{$prefix}Btn-Error
+  @extend .#{$prefix}Btn-Red
+
+.#{$prefix}Btn-ok
+  @extend .#{$prefix}Btn-teal
+.#{$prefix}Btn-Ok
+  @extend .#{$prefix}Btn-Teal
+.#{$prefix}Btn-ng
+  @extend .#{$prefix}Btn-pink
+.#{$prefix}Btn-Ng
+  @extend .#{$prefix}Btn-Pink

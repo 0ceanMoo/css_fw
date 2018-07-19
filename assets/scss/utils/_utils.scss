@@ -3,3 +3,9 @@
 ============================================== */
 .#{$prefix}ime-off { ime-mode: disabled;   }
 .#{$prefix}nowrap  { white-space: nowrap;  }
+
+.#{$prefix}clearfix:after {
+  content:" ";
+  display:block;
+  clear:both;
+}

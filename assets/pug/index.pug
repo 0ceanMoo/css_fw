@@ -7,9 +7,7 @@ html(lang="en")
     h1 CSSフレームワーク
     div
       h2 マージン
-    div
-      h2 フォント
-    div
+    div._clearfix
       h2._lined カラー
       .color-box
         ._Red red
@@ -31,7 +29,8 @@ html(lang="en")
         ._Pink pink
       .color-box
         ._Black black
-        ._Grey grey
+        ._Gray gray
+        ._Silver silver
         ._White white
       .color-box
         ._Info info
@@ -54,3 +53,34 @@ html(lang="en")
             line-height: 40px;
             text-align: center
           }
+    div
+      h2._lined ボタン
+      .btn-box
+          button._Btn Btn
+          button._Btn-Black Btn-Black
+          button._Btn-red Btn-red
+          button._Btn-Red Btn-Red
+          button._Btn-blue Btn-blue
+          button._Btn-Blue Btn-Blue
+          button._Btn-yellow Btn-yellow
+          button._Btn-Yellow Btn-Yellow
+          button._Btn-orange Btn-orange
+          button._Btn-Orange Btn-Orange
+      .btn-box
+          button._Btn-info Btn-info
+          button._Btn-Info Btn-Info
+          button._Btn-warn Btn-warn
+          button._Btn-Warn Btn-Warn
+          button._Btn-error Btn-error
+          button._Btn-Error Btn-Error
+      .btn-box
+          button._Btn-ok Btn-ok
+          button._Btn-Ok Btn-Ok
+          button._Btn-ng Btn-ng
+          button._Btn-Ng Btn-Ng
+      style
+        .
+          .btn-box {
+            margin: 10px 0
+          }
+
