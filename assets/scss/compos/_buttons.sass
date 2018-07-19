@@ -1,0 +1,26 @@
+// Card
+//------------------------------
+@mixin button($c: $grey, $bg: $white)
+  display: inline-block
+  margin: 0
+  padding: .4rem 1.2rem
+  margin: 0
+  border: 1px solid
+  color: $c
+  background: $bg 
+  cursor: pointer
+  transition: .4s 
+  &:hover
+    color: $bg 
+    background: $c
+
+._Button
+  @include button($grey)
+._Button-blue
+  @include button($blue)
+._Button-Blue
+  @include button($white, $blue)
+._Button-success
+  @include button($success)
+._Button-Success
+  @include button($white, $success)

@@ -958,3 +958,7 @@
 h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
   border-bottom: 1px solid #333;
 }
+
+h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
+  border-bottom: 1px solid #333;
+}
