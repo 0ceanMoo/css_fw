@@ -3,6 +3,7 @@ html(lang="en")
   head
     meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
     title CSSフレームワーク
+    link(href="https://necolas.github.io/normalize.css/latest/normalize.css" rel="stylesheet")
     link(href="css/util.css" rel="stylesheet")
   body
     h1 CSSフレームワーク
@@ -15,3 +16,8 @@ html(lang="en")
         include compo/_buttons.pug
       div
         include compo/_cards.pug
+    style
+      .
+        body {
+          padding: 0 1rem;
+        }
