@@ -115,14 +115,21 @@
 
 /* margin & padding
 ---------------------------------------------- */
+
 // 5-20pxまで、5px間隔で作る
-@for $i from 1 through 4 {
-  $val : #{$i * 5};
-  .#{$prefix}m-#{$val}px  { margin:       #{$val}px !important; }
-  .#{$prefix}mt-#{$val}px { margin-top:   #{$val}px !important; }
-  .#{$prefix}mb-#{$val}px { margin-bottom:#{$val}px !important; }
-  .#{$prefix}ml-#{$val}px { margin-left:  #{$val}px !important; }
-  .#{$prefix}mr-#{$val}px { margin-right: #{$val}px !important; }
-  .#{$prefix}mx-#{$val}px { margin-left:  #{$val}px !important; margin-right: #{$val}px !important; }
-  .#{$prefix}my-#{$val}px { margin-top:   #{$val}px !important; margin-bottom:#{$val}px !important; }
+$mdpd: (
+  m: margin,
+  p: padding
+);
+@each $e, $p in $mdpd {
+  @for $i from 1 through 4 {
+    $val : #{$i * 5};
+    .#{$prefix}#{$e}-#{$val}px  { #{$p}:       #{$val}px !important; }
+    .#{$prefix}#{$e}t-#{$val}px { #{$p}-top:   #{$val}px !important; }
+    .#{$prefix}#{$e}b-#{$val}px { #{$p}-bottom:#{$val}px !important; }
+    .#{$prefix}#{$e}l-#{$val}px { #{$p}-left:  #{$val}px !important; }
+    .#{$prefix}#{$e}r-#{$val}px { #{$p}-right: #{$val}px !important; }
+    .#{$prefix}#{$e}x-#{$val}px { #{$p}-left:  #{$val}px !important; #{$p}-right: #{$val}px !important; }
+    .#{$prefix}#{$e}y-#{$val}px { #{$p}-top:   #{$val}px !important; #{$p}-bottom:#{$val}px !important; }
+  }
 }

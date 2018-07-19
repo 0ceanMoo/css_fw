@@ -9,3 +9,9 @@
   display:block;
   clear:both;
 }
+
+.#{$prefix}code {
+  margin: 0;
+  padding: 1rem;
+  background: $silver;
+}

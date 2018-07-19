@@ -10,17 +10,19 @@
     "concurrently": "^3.6.0",
     "node-sass": "^4.9.0",
     "node-sass-import": "^2.0.1",
+    "normalize.css": "^8.0.0",
     "postcss": "^6.0.23",
     "postcss-cli": "^5.0.1",
     "pug": "^2.0.3",
-    "pug-cli": "^1.0.0-alpha6"
+    "pug-cli": "^1.0.0-alpha6",
+    "ress": "^1.2.2"
   },
   "scripts": {
     "build": "yarn build-scss && yarn autoprefixer",
-    "build-scss": "node-sass --include-path assets/scss/utils --include-path assets/scss/elems --include-path assets/scss/compos assets/scss/app.scss assets/css/util.css --output-style expanded",
+    "build-scss": "node-sass assets/scss/app.scss assets/css/util.css --output-style expanded --importer node_modules/node-sass-import",
     "autoprefixer": "postcss --use autoprefixer --no-map assets/css/util.css -d public/css/",
-    "build-pug": "pug assets/pug --out ./public/ --pretty",
-    "watch": "concurrently \"yarn build-pug --watch\" \"yarn build-scss --watch\" \"yarn autoprefixer -w \""
+    "build-pug": "pug assets/pug/index.pug --out ./public/ --pretty",
+    "watch": "concurrently 'yarn build-pug --watch' 'yarn build-scss --watch' 'yarn autoprefixer -w'"
   },
   "browserslist": [
     "last 2 versions",

@@ -6,81 +6,11 @@ html(lang="en")
   body
     h1 CSSフレームワーク
     div
-      h2 マージン
-    div._clearfix
-      h2._lined カラー
-      .color-box
-        ._Red red
-        ._Orange orange
-        ._Yellow yellow
-      .color-box
-        ._Teal teal
-        ._Green green
-        ._Lime lime
-      .color-box
-        ._Navy navy
-        ._Blue blue
-      .color-box
-        ._Olive olive
-        ._Brown brown
-      .color-box
-        ._Purple purple
-        ._Violet violet
-        ._Pink pink
-      .color-box
-        ._Black black
-        ._Gray gray
-        ._Silver silver
-        ._White white
-      .color-box
-        ._Info info
-        ._Warn warn
-        ._Error error
-      .color-box
-        ._Ok ok
-        ._Ng ng
-      style
-        .
-          .color-box {
-            clear: both;
-          }
-          .color-box div {
-            float: left;
-            margin: 0;
-            padding: 0;
-            width: 80px;
-            height: 40px;
-            line-height: 40px;
-            text-align: center
-          }
-    div
-      h2._lined ボタン
-      .btn-box
-          button._Btn Btn
-          button._Btn-Black Btn-Black
-          button._Btn-red Btn-red
-          button._Btn-Red Btn-Red
-          button._Btn-blue Btn-blue
-          button._Btn-Blue Btn-Blue
-          button._Btn-yellow Btn-yellow
-          button._Btn-Yellow Btn-Yellow
-          button._Btn-orange Btn-orange
-          button._Btn-Orange Btn-Orange
-      .btn-box
-          button._Btn-info Btn-info
-          button._Btn-Info Btn-Info
-          button._Btn-warn Btn-warn
-          button._Btn-Warn Btn-Warn
-          button._Btn-error Btn-error
-          button._Btn-Error Btn-Error
-      .btn-box
-          button._Btn-ok Btn-ok
-          button._Btn-Ok Btn-Ok
-          button._Btn-ng Btn-ng
-          button._Btn-Ng Btn-Ng
-      style
-        .
-          .btn-box {
-            margin: 10px 0
-          }
-
+      h2._lined Utils
+      div
+        include utils/_colors.pug
+      h2._lined Compo
+      div
+        include compo/_buttons.pug
+      div
+        include compo/_cards.pug
