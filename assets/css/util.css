@@ -1439,9 +1439,8 @@ h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
 
 ._Btn {
   display: inline-block;
-  margin: 0;
+  margin: 0 -2px;
   padding: .4rem 1.2rem;
-  margin: 0;
   border: 1px solid;
   border-color: #000;
   color: #000;
@@ -1457,11 +1456,10 @@ h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
 
 ._Btn-Black {
   display: inline-block;
-  margin: 0;
+  margin: 0 -2px;
   padding: .4rem 1.2rem;
-  margin: 0;
   border: 1px solid;
-  border-color: #fff;
+  border-color: #000;
   color: #fff;
   background: #000;
   cursor: pointer;
@@ -1475,9 +1473,8 @@ h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
 
 ._Btn-red, ._Btn-error {
   display: inline-block;
-  margin: 0;
+  margin: 0 -2px;
   padding: .4rem 1.2rem;
-  margin: 0;
   border: 1px solid;
   border-color: #f33;
   color: #f33;
@@ -1493,9 +1490,8 @@ h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
 
 ._Btn-Red, ._Btn-Error {
   display: inline-block;
-  margin: 0;
+  margin: 0 -2px;
   padding: .4rem 1.2rem;
-  margin: 0;
   border: 1px solid;
   border-color: #f33;
   color: #fff;
@@ -1511,9 +1507,8 @@ h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
 
 ._Btn-blue, ._Btn-info {
   display: inline-block;
-  margin: 0;
+  margin: 0 -2px;
   padding: .4rem 1.2rem;
-  margin: 0;
   border: 1px solid;
   border-color: #66C;
   color: #66C;
@@ -1529,9 +1524,8 @@ h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
 
 ._Btn-Blue, ._Btn-Info {
   display: inline-block;
-  margin: 0;
+  margin: 0 -2px;
   padding: .4rem 1.2rem;
-  margin: 0;
   border: 1px solid;
   border-color: #66C;
   color: #fff;
@@ -1547,9 +1541,8 @@ h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
 
 ._Btn-orange {
   display: inline-block;
-  margin: 0;
+  margin: 0 -2px;
   padding: .4rem 1.2rem;
-  margin: 0;
   border: 1px solid;
   border-color: #F83;
   color: #F83;
@@ -1565,9 +1558,8 @@ h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
 
 ._Btn-Orange {
   display: inline-block;
-  margin: 0;
+  margin: 0 -2px;
   padding: .4rem 1.2rem;
-  margin: 0;
   border: 1px solid;
   border-color: #F83;
   color: #fff;
@@ -1583,9 +1575,8 @@ h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
 
 ._Btn-teal, ._Btn-ok {
   display: inline-block;
-  margin: 0;
+  margin: 0 -2px;
   padding: .4rem 1.2rem;
-  margin: 0;
   border: 1px solid;
   border-color: #399;
   color: #399;
@@ -1601,9 +1592,8 @@ h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
 
 ._Btn-Teal, ._Btn-Ok {
   display: inline-block;
-  margin: 0;
+  margin: 0 -2px;
   padding: .4rem 1.2rem;
-  margin: 0;
   border: 1px solid;
   border-color: #399;
   color: #fff;
@@ -1619,9 +1609,8 @@ h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
 
 ._Btn-yellow, ._Btn-warn {
   display: inline-block;
-  margin: 0;
+  margin: 0 -2px;
   padding: .4rem 1.2rem;
-  margin: 0;
   border: 1px solid;
   border-color: #fd0;
   color: #999;
@@ -1637,9 +1626,8 @@ h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
 
 ._Btn-Yellow, ._Btn-Warn {
   display: inline-block;
-  margin: 0;
+  margin: 0 -2px;
   padding: .4rem 1.2rem;
-  margin: 0;
   border: 1px solid;
   border-color: #fd0;
   color: #000;
@@ -1655,9 +1643,8 @@ h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
 
 ._Btn-pink, ._Btn-ng {
   display: inline-block;
-  margin: 0;
+  margin: 0 -2px;
   padding: .4rem 1.2rem;
-  margin: 0;
   border: 1px solid;
   border-color: #f99;
   color: #999;
@@ -1673,9 +1660,8 @@ h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
 
 ._Btn-Pink, ._Btn-Ng {
   display: inline-block;
-  margin: 0;
+  margin: 0 -2px;
   padding: .4rem 1.2rem;
-  margin: 0;
   border: 1px solid;
   border-color: #f99;
   color: #000;

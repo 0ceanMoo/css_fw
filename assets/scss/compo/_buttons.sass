@@ -15,9 +15,8 @@
     $bd: $c
 
   display: inline-block
-  margin: 0
+  margin: 0 -2px // 0だと横に並べると何故かスキマができてしまうので、その対応
   padding: .4rem 1.2rem
-  margin: 0
   border: 1px solid
   border-color: $bd
   color: $c
@@ -32,7 +31,7 @@
   @include button
 
 .#{$prefix}Btn-Black
-  @include button($white, $black)
+  @include button($white, $black, 1)
 
 .#{$prefix}Btn-red
   @include button($red)
