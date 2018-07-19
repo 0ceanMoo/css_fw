@@ -736,6 +736,21 @@
 }
 
 /* ==============================================
+  Text
+============================================== */
+._center {
+  text-align: center      !important;
+}
+
+._right {
+  text-align: right       !important;
+}
+
+._left {
+  text-align: left        !important;
+}
+
+/* ==============================================
   fonts
 ============================================== */
 /* size
@@ -1067,4 +1082,12 @@
 
 ._bg-cc9 {
   background-color: #cc9;
+}
+
+._ime-off {
+  ime-mode: disabled;
+}
+
+._nowrap {
+  white-space: nowrap;
 }
