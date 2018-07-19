@@ -17,7 +17,7 @@
   },
   "scripts": {
     "build": "yarn build-scss && yarn autoprefixer",
-    "build-scss": "node-sass --include-path assets/scss assets/scss/main.scss assets/css/util.css --output-style expanded",
+    "build-scss": "node-sass --include-path assets/scss/utils --include-path assets/scss/elems --include-path assets/scss/compos assets/scss/app.scss assets/css/util.css --output-style expanded",
     "autoprefixer": "postcss --use autoprefixer --no-map assets/css/util.css -d public/css/",
     "build-pug": "pug assets/pug --out ./public/ --pretty",
     "watch": "concurrently \"yarn build-pug --watch\" \"yarn build-scss --watch\" \"yarn autoprefixer -w \""

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>CSSフレームワーク</title>
-    <link rel="/css/util.css">
+    <link href="css/util.css" rel="stylesheet">
   </head>
   <body>
     <h1>CSSフレームワーク</h1>
@@ -13,7 +13,58 @@
       <h2>フォント</h2>
     </div>
     <div>
-      <h2>カラー</h2>
+      <h2 class="_lined">カラー</h2>
+      <div class="color-box">
+        <div class="_Red">red</div>
+        <div class="_Orange">orange</div>
+        <div class="_Yellow">yellow</div>
+      </div>
+      <div class="color-box">
+        <div class="_Teal">teal</div>
+        <div class="_Green">green</div>
+        <div class="_Lime">lime</div>
+      </div>
+      <div class="color-box">
+        <div class="_Navy">navy</div>
+        <div class="_Blue">blue</div>
+      </div>
+      <div class="color-box">
+        <div class="_Olive">olive</div>
+        <div class="_Brown">brown</div>
+      </div>
+      <div class="color-box">
+        <div class="_Purple">purple</div>
+        <div class="_Violet">violet</div>
+        <div class="_Pink">pink</div>
+      </div>
+      <div class="color-box">
+        <div class="_Black">black</div>
+        <div class="_Grey">grey</div>
+        <div class="_White">white</div>
+      </div>
+      <div class="color-box">
+        <div class="_Info">info</div>
+        <div class="_Warn">warn</div>
+        <div class="_Error">error</div>
+      </div>
+      <div class="color-box">
+        <div class="_Ok">ok</div>
+        <div class="_Ng">ng</div>
+      </div>
+      <style>
+        .color-box {
+          clear: both;
+        }
+        .color-box div {
+          float: left;
+          margin: 0;
+          padding: 0;
+          width: 80px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center
+        }
+      </style>
     </div>
   </body>
 </html>
