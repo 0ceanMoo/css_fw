@@ -246,6 +246,16 @@ a {
   vertical-align: bottom  !important;
 }
 
+/* float
+---------------------------------------------- */
+._f-left {
+  float: left;
+}
+
+._f-right {
+  float: right;
+}
+
 /* ==============================================
   Box model
 ============================================== */
@@ -1095,18 +1105,18 @@ a {
   clear: both;
 }
 
-._code {
+._code_ {
   margin: 0;
   padding: 1rem;
   background: #eee;
 }
 
-h1._lefted, h2._lefted, h3._lefted, h4._lefted, h5._lefted, h6._lefted {
+h1._lefted_, h2._lefted_, h3._lefted_, h4._lefted_, h5._lefted_, h6._lefted_ {
   border-left: .5rem solid #333;
   padding: .1rem .5rem 0;
 }
 
-h1._lined, h2._lined, h3._lined, h4._lined, h5._lined, h6._lined {
+h1._lined_, h2._lined_, h3._lined_, h4._lined_, h5._lined_, h6._lined_ {
   border-bottom: 1px solid #333;
   padding-bottom: .2rem;
 }
@@ -1429,26 +1439,46 @@ form input[type="text"]:invalid, form input[type="password"]:invalid, form input
   margin-left: 5px;
 }
 
-._icon._heart:before {
+._icon._heart:before, ._icon.heart_:after {
   content: '\f004';
 }
 
-._icon._user:before {
+._icon._user:before, ._icon.user_:after {
   content: '\f007';
 }
 
-._icon._Heart:before {
+._icon._Heart:before, ._icon.Hear_t:after {
   content: '\f004';
   font-weight: 900;
 }
 
-._icon._User:before {
+._icon._User:before, ._icon.User_:after {
   content: '\f007';
   font-weight: 900;
 }
 
-._icon._Lock:after {
+._icon._Lock:before, ._icon.Lock_:after {
   content: '\f023';
+  font-weight: 900;
+}
+
+._icon._Th:before, ._icon.Th_:after {
+  content: '\f00a';
+  font-weight: 900;
+}
+
+._icon._Th-list:before, ._icon.Th-list_:after {
+  content: '\f00b';
+  font-weight: 900;
+}
+
+._icon._Th-large:before, ._icon.Th-large_:after {
+  content: '\f009';
+  font-weight: 900;
+}
+
+._icon._Sign-out-alt:before, ._icon.Sign-out-alt:after {
+  content: '\f2f5';
   font-weight: 900;
 }
 

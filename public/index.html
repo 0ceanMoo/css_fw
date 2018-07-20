@@ -11,9 +11,9 @@
     <h1>CSSフレームワーク</h1>
     <div>
       <section>
-        <h2 class="_lined">Utils</h2>
+        <h2 class="_lined_">Utils</h2>
         <article>
-          <h3 class="_lefted">カラー</h3>
+          <h3 class="_lefted_">カラー</h3>
           <div class="color-box">
             <div class="_Red">red</div>
             <div class="_Orange">orange</div>
@@ -71,9 +71,9 @@
         </article>
       </section>
       <section>
-        <h2 class="_lined">Elems</h2>
+        <h2 class="_lined_">Elems</h2>
         <article>
-          <h3 class="_lefted">ボタン</h3>
+          <h3 class="_lefted_">ボタン</h3>
           <div class="btn-box">
             <button class="_Btn">Btn</button>
             <button class="_Btn-Black">Btn-Black</button>
@@ -114,7 +114,7 @@
           </style>
         </article>
         <article>
-          <h3 class="_lefted">リスト</h3>
+          <h3 class="_lefted_">リスト</h3>
           <div class="list-box">
             <ul>
               <li class="_icon _Heart">item-1</li>
@@ -131,7 +131,7 @@
             <p>水平メニューは基礎設定のみ提供する。細かい設定は「ul._virticaled_」にstyleを追加するか、sassが使えるなら「ul.my._virticaled_」を継承して整える</p>
             <div>
               <h4>styleタグ</h4>
-              <pre class="_code">/* ul._virticaled_に直接styleあてると、他にも影響するので「my」で影響範囲を絞ってる */
+              <pre class="_code_">/* ul._virticaled_に直接styleあてると、他にも影響するので「my」で影響範囲を絞ってる */
 ul.my._virticaled_ > li {
   background: #ccF;
   width: 100px;
@@ -142,7 +142,7 @@ ul.my._virticaled_ > li {
             </div>
             <div>
               <h4>sassが使えるなら</h4>
-              <pre class="_code">.myList {
+              <pre class="_code_">.myList {
   @extend ._virticaled_
   li {
     background: #ccF;
@@ -171,13 +171,13 @@ ul.my._virticaled_ > li {
         </article>
       </section>
       <section>
-        <h2 class="_lined">Compo</h2>
+        <h2 class="_lined_">Compo</h2>
         <article>
-          <h3 class="_lefted">カード</h3>
+          <h3 class="_lefted_">カード</h3>
           <div class="card-box">
             <div class="my _Card">
               <h4>カードの説明</h4>
-              <pre class="_code">div.my._Card {
+              <pre class="_code_">div.my._Card {
   width: 300px;
   margin-right: 1rem;
 }
@@ -196,7 +196,7 @@ div.my._Card > p {
             </div>
             <div class="my _Card">
               <h4>カードの説明</h4>
-              <pre class="_code">.myCard {
+              <pre class="_code_">.myCard {
   @extend ._Card
   .image
     // 設定
