@@ -116,15 +116,15 @@
           <h3 class="_lefted">リスト</h3>
           <div class="list-box">
             <ul>
-              <li>item-1</li>
-              <li>item-2</li>
-              <li>item-3</li>
+              <li class="_icon _Heart">item-1</li>
+              <li class="_icon _User">item-2</li>
+              <li class="_icon _Lock">item-3</li>
             </ul>
           </div>
           <div class="list-box">
             <ul class="my _virticaled">
-              <li><a href="#">item-1</a></li>
-              <li><a href="#">item-2</a></li>
+              <li><a class="_icon _heart" href="#">item-1</a></li>
+              <li><a class="_icon _user" href="#">item-2</a></li>
               <li><a href="#">item-3</a></li>
             </ul>
             <p>水平メニューは基礎設定のみ提供する。細かい設定は「ul._virticaled」にstyleを追加するか、sassが使えるなら「ul.my._virticaled」を継承して整える</p>
@@ -145,7 +145,7 @@ ul.my._virticaled > li {
   @extend ._virticaled
   li {
     background: #ccF;
-    width: 100px;
+    width: 200px;
     height: 60px;
     line-height: 60px;
     text-align: center;

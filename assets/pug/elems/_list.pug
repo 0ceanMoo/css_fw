@@ -1,13 +1,13 @@
 h3._lefted リスト
 .list-box
   ul
-    li item-1
-    li item-2
-    li item-3
+    li._icon._Heart item-1
+    li._icon._User item-2
+    li._icon._Lock item-3
 .list-box
   ul.my._virticaled
-    li: a(href="#") item-1
-    li: a(href="#") item-2
+    li: a._icon._heart(href="#") item-1
+    li: a._icon._user(href="#") item-2
     li: a(href="#") item-3
   p 水平メニューは基礎設定のみ提供する。細かい設定は「ul._virticaled」にstyleを追加するか、sassが使えるなら「ul.my._virticaled」を継承して整える
   div
@@ -30,7 +30,7 @@ h3._lefted リスト
           @extend ._virticaled
           li {
             background: #ccF;
-            width: 100px;
+            width: 200px;
             height: 60px;
             line-height: 60px;
             text-align: center;

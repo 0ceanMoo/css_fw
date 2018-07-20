@@ -1,0 +1,19 @@
+/* ==============================================
+  Icons
+============================================== */
+// font-weight
+// Solid    900   白抜きのアイコン
+// Regular  400   アウトライン
+// Light    300   線が細いもの
+._icon {
+  &:before {
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
+    line-height: 1;
+  }
+  &._heart:before { content: '\f004'; }
+  &._user:before  { content: '\f007'; }
+  &._Heart:before { content: '\f004'; font-weight:900; }
+  &._User:before  { content: '\f007'; font-weight:900; }
+  &._Lock:before  { content: '\f023'; font-weight:900; } // fas
+}
