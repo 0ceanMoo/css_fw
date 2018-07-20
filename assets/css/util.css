@@ -881,23 +881,23 @@ a {
 /* size
 ---------------------------------------------- */
 ._xs {
-  font-size: 0.6rem;
+  font-size: 0.6rem !important;
 }
 
 ._sm {
-  font-size: 0.8rem;
+  font-size: 0.8rem !important;
 }
 
 ._md {
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 ._lg {
-  font-size: 1.4rem;
+  font-size: 1.4rem !important;
 }
 
 ._xl {
-  font-size: 1.8rem;
+  font-size: 1.8rem !important;
 }
 
 /* weight
@@ -1145,13 +1145,13 @@ ul._virticaled > li {
 ._Btn {
   box-sizing: border-box;
   display: inline-block;
-  margin: 0 -2px;
-  padding: .4rem 1.2rem;
+  padding: .5rem 1.2rem .2rem;
   border: 1px solid;
   border-color: #000;
   color: #000;
   background: #fff;
   cursor: pointer;
+  letter-spacing: normal;
   transition: .4s;
 }
 
@@ -1163,13 +1163,13 @@ ul._virticaled > li {
 ._Btn-Black {
   box-sizing: border-box;
   display: inline-block;
-  margin: 0 -2px;
-  padding: .4rem 1.2rem;
+  padding: .5rem 1.2rem .2rem;
   border: 1px solid;
   border-color: #000;
   color: #fff;
   background: #000;
   cursor: pointer;
+  letter-spacing: normal;
   transition: .4s;
 }
 
@@ -1181,13 +1181,13 @@ ul._virticaled > li {
 ._Btn-red, ._Btn-error {
   box-sizing: border-box;
   display: inline-block;
-  margin: 0 -2px;
-  padding: .4rem 1.2rem;
+  padding: .5rem 1.2rem .2rem;
   border: 1px solid;
   border-color: #f33;
   color: #f33;
   background: #fff;
   cursor: pointer;
+  letter-spacing: normal;
   transition: .4s;
 }
 
@@ -1199,13 +1199,13 @@ ul._virticaled > li {
 ._Btn-Red, ._Btn-Error {
   box-sizing: border-box;
   display: inline-block;
-  margin: 0 -2px;
-  padding: .4rem 1.2rem;
+  padding: .5rem 1.2rem .2rem;
   border: 1px solid;
   border-color: #f33;
   color: #fff;
   background: #f33;
   cursor: pointer;
+  letter-spacing: normal;
   transition: .4s;
 }
 
@@ -1217,13 +1217,13 @@ ul._virticaled > li {
 ._Btn-blue, ._Btn-info {
   box-sizing: border-box;
   display: inline-block;
-  margin: 0 -2px;
-  padding: .4rem 1.2rem;
+  padding: .5rem 1.2rem .2rem;
   border: 1px solid;
   border-color: #66C;
   color: #66C;
   background: #fff;
   cursor: pointer;
+  letter-spacing: normal;
   transition: .4s;
 }
 
@@ -1235,13 +1235,13 @@ ul._virticaled > li {
 ._Btn-Blue, ._Btn-Info {
   box-sizing: border-box;
   display: inline-block;
-  margin: 0 -2px;
-  padding: .4rem 1.2rem;
+  padding: .5rem 1.2rem .2rem;
   border: 1px solid;
   border-color: #66C;
   color: #fff;
   background: #66C;
   cursor: pointer;
+  letter-spacing: normal;
   transition: .4s;
 }
 
@@ -1253,13 +1253,13 @@ ul._virticaled > li {
 ._Btn-orange {
   box-sizing: border-box;
   display: inline-block;
-  margin: 0 -2px;
-  padding: .4rem 1.2rem;
+  padding: .5rem 1.2rem .2rem;
   border: 1px solid;
   border-color: #F83;
   color: #F83;
   background: #fff;
   cursor: pointer;
+  letter-spacing: normal;
   transition: .4s;
 }
 
@@ -1271,13 +1271,13 @@ ul._virticaled > li {
 ._Btn-Orange {
   box-sizing: border-box;
   display: inline-block;
-  margin: 0 -2px;
-  padding: .4rem 1.2rem;
+  padding: .5rem 1.2rem .2rem;
   border: 1px solid;
   border-color: #F83;
   color: #fff;
   background: #F83;
   cursor: pointer;
+  letter-spacing: normal;
   transition: .4s;
 }
 
@@ -1289,13 +1289,13 @@ ul._virticaled > li {
 ._Btn-teal, ._Btn-ok {
   box-sizing: border-box;
   display: inline-block;
-  margin: 0 -2px;
-  padding: .4rem 1.2rem;
+  padding: .5rem 1.2rem .2rem;
   border: 1px solid;
   border-color: #399;
   color: #399;
   background: #fff;
   cursor: pointer;
+  letter-spacing: normal;
   transition: .4s;
 }
 
@@ -1307,13 +1307,13 @@ ul._virticaled > li {
 ._Btn-Teal, ._Btn-Ok {
   box-sizing: border-box;
   display: inline-block;
-  margin: 0 -2px;
-  padding: .4rem 1.2rem;
+  padding: .5rem 1.2rem .2rem;
   border: 1px solid;
   border-color: #399;
   color: #fff;
   background: #399;
   cursor: pointer;
+  letter-spacing: normal;
   transition: .4s;
 }
 
@@ -1325,13 +1325,13 @@ ul._virticaled > li {
 ._Btn-yellow, ._Btn-warn {
   box-sizing: border-box;
   display: inline-block;
-  margin: 0 -2px;
-  padding: .4rem 1.2rem;
+  padding: .5rem 1.2rem .2rem;
   border: 1px solid;
   border-color: #fd0;
   color: #999;
   background: #fff;
   cursor: pointer;
+  letter-spacing: normal;
   transition: .4s;
 }
 
@@ -1343,13 +1343,13 @@ ul._virticaled > li {
 ._Btn-Yellow, ._Btn-Warn {
   box-sizing: border-box;
   display: inline-block;
-  margin: 0 -2px;
-  padding: .4rem 1.2rem;
+  padding: .5rem 1.2rem .2rem;
   border: 1px solid;
   border-color: #fd0;
   color: #000;
   background: #fd0;
   cursor: pointer;
+  letter-spacing: normal;
   transition: .4s;
 }
 
@@ -1361,13 +1361,13 @@ ul._virticaled > li {
 ._Btn-pink, ._Btn-ng {
   box-sizing: border-box;
   display: inline-block;
-  margin: 0 -2px;
-  padding: .4rem 1.2rem;
+  padding: .5rem 1.2rem .2rem;
   border: 1px solid;
   border-color: #f99;
   color: #999;
   background: #fff;
   cursor: pointer;
+  letter-spacing: normal;
   transition: .4s;
 }
 
@@ -1379,13 +1379,13 @@ ul._virticaled > li {
 ._Btn-Pink, ._Btn-Ng {
   box-sizing: border-box;
   display: inline-block;
-  margin: 0 -2px;
-  padding: .4rem 1.2rem;
+  padding: .5rem 1.2rem .2rem;
   border: 1px solid;
   border-color: #f99;
   color: #000;
   background: #f99;
   cursor: pointer;
+  letter-spacing: normal;
   transition: .4s;
 }
 
@@ -1446,21 +1446,23 @@ form input[type="text"]:invalid, form input[type="password"]:invalid, form input
 }
 
 /* ==============================================
-  Card */
-._Card {
+  Box */
+._Box, ._Card {
   box-sizing: border-box;
 }
 
-._Card > * {
+._Box > *, ._Card > * {
   margin: 0;
   padding: 0;
 }
 
-._Card._shadow_ {
+._Box._shadow_, ._shadow_._Card {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-._Card._iblock_ {
+/* ==============================================
+  Card */
+._Card {
   display: inline-block;
   letter-spacing: normal;
   vertical-align: top;

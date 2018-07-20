@@ -4,11 +4,11 @@
 
 /* size
 ---------------------------------------------- */
-.#{$prefix}xs { font-size: $fonts_xs; }
-.#{$prefix}sm { font-size: $fonts_sm; }
-.#{$prefix}md { font-size: $fonts_md; }
-.#{$prefix}lg { font-size: $fonts_lg; }
-.#{$prefix}xl { font-size: $fonts_xl; }
+.#{$prefix}xs { font-size: $fonts_xs !important; }
+.#{$prefix}sm { font-size: $fonts_sm !important; }
+.#{$prefix}md { font-size: $fonts_md !important; }
+.#{$prefix}lg { font-size: $fonts_lg !important; }
+.#{$prefix}xl { font-size: $fonts_xl !important; }
 
 //for $i from 10 through 20 {
 //  .fs#{$i} {

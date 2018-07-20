@@ -1,13 +1,15 @@
 /* ==============================================
-  Card
+  Box
 // ============================================== */
-// https://nippori30.hatenablog.com/entry/2018/05/01/174518
 
-._Card
-  @extend ._Box
-  display: inline-block
-  letter-spacing: normal // 隙間対策、親要素にletter-spacing: -1remをつけること
-  vertical-align: top
+._Box
+  box-sizing: border-box
+  > *
+    margin: 0
+    padding: 0
+  &._shadow_
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.10)
+    //box-shadow: 0 3px 6px #ccc;
 
 // 継承サンプル
   ._Card
