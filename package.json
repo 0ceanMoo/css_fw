@@ -10,12 +10,10 @@
     "concurrently": "^3.6.0",
     "node-sass": "^4.9.0",
     "node-sass-import": "^2.0.1",
-    "normalize.css": "^8.0.0",
     "postcss": "^6.0.23",
     "postcss-cli": "^5.0.1",
     "pug": "^2.0.3",
-    "pug-cli": "^1.0.0-alpha6",
-    "ress": "^1.2.2"
+    "pug-cli": "^1.0.0-alpha6"
   },
   "scripts": {
     "build": "yarn build-scss && yarn autoprefixer",
