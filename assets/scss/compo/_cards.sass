@@ -5,19 +5,20 @@
 
 ._Card
   box-sizing: border-box
-  display: inline-block
-  letter-spacing: normal // 隙間対策、親要素にletter-spacing: -1remをつけること
-  vertical-align: top
   > *
     margin: 0
     padding: 0
-  &._shadow
+  &._shadow_
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.10)
     //box-shadow: 0 3px 6px #ccc;
+  &._iblock_
+    display: inline-block
+    letter-spacing: normal // 隙間対策、親要素にletter-spacing: -1remをつけること
+    vertical-align: top
 
 // 継承サンプル
   ._Card
-    @extend ._Card-base
+    @extend ._Card
     > *
       padding: .7rem 1rem
     > h4
