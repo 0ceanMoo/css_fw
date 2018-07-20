@@ -40,3 +40,8 @@
 .#{$prefix}top    { vertical-align: top     !important; }
 .#{$prefix}middle { vertical-align: middle  !important; }
 .#{$prefix}bottom { vertical-align: bottom  !important; }
+
+/* float
+---------------------------------------------- */
+.#{$prefix}f-left   { float: left }
+.#{$prefix}f-right  { float: right }

@@ -12,9 +12,13 @@
   }
   &:before { margin-right: 5px; }
   &:after { margin-left: 5px; }
-  &._heart:before { content: '\f004'; }
-  &._user:before  { content: '\f007'; }
-  &._Heart:before { content: '\f004'; font-weight:900; }
-  &._User:before  { content: '\f007'; font-weight:900; }
-  &._Lock:after  { content: '\f023'; font-weight:900; } // fas
+  &._heart:before,    &.heart_:after    { content: '\f004'; }
+  &._user:before,     &.user_:after     { content: '\f007'; }
+  &._Heart:before,    &.Hear_t:after    { content: '\f004'; font-weight:900; }
+  &._User:before,     &.User_:after     { content: '\f007'; font-weight:900; }
+  &._Lock:before,     &.Lock_:after     { content: '\f023'; font-weight:900; }
+  &._Th:before,       &.Th_:after       { content: '\f00a'; font-weight:900; }
+  &._Th-list:before,  &.Th-list_:after  { content: '\f00b'; font-weight:900; }
+  &._Th-large:before, &.Th-large_:after { content: '\f009'; font-weight:900; }
+  &._Sign-out-alt:before, &.Sign-out-alt:after{ content: '\f2f5'; font-weight:900; }
 }
