@@ -3,9 +3,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-ul {
-  list-style-type: none;
-}
 
 // _valiables
 @import "_variables";
@@ -20,8 +17,9 @@ ul {
 
 // elems
 @import "elems/_headline";
+@import "elems/_list";
+@import "elems/_buttons";
 @import "elems/_form";
 
 // compo
-@import "compo/_buttons";
 @import "compo/_cards";

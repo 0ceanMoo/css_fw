@@ -4,18 +4,21 @@ html(lang="en")
     meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
     title CSSフレームワーク
     link(href="https://necolas.github.io/normalize.css/latest/normalize.css" rel="stylesheet")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous")
     link(href="css/util.css" rel="stylesheet")
   body
     h1 CSSフレームワーク
     div
-      h2._lined Utils
-      div
-        include utils/_colors.pug
-      h2._lined Compo
-      div
-        include compo/_buttons.pug
-      div
-        include compo/_cards.pug
+      section
+        h2._lined Utils
+        article: include utils/_colors.pug
+      section
+        h2._lined Elems
+        article: include elems/_buttons.pug
+        article: include elems/_list.pug
+      section
+        h2._lined Compo
+        article: include compo/_cards.pug
     style
       .
         body {

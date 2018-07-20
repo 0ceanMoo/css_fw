@@ -4,116 +4,176 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>CSSフレームワーク</title>
     <link href="https://necolas.github.io/normalize.css/latest/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link href="css/util.css" rel="stylesheet">
   </head>
   <body>
     <h1>CSSフレームワーク</h1>
     <div>
-      <h2 class="_lined">Utils</h2>
-      <div>
-        <h3 class="_lefted">カラー</h3>
-        <div class="color-box">
-          <div class="_Red">red</div>
-          <div class="_Orange">orange</div>
-          <div class="_Yellow">yellow</div>
-        </div>
-        <div class="color-box">
-          <div class="_Teal">teal</div>
-          <div class="_Green">green</div>
-          <div class="_Lime">lime</div>
-        </div>
-        <div class="color-box">
-          <div class="_Navy">navy</div>
-          <div class="_Blue">blue</div>
-        </div>
-        <div class="color-box">
-          <div class="_Olive">olive</div>
-          <div class="_Brown">brown</div>
-        </div>
-        <div class="color-box">
-          <div class="_Purple">purple</div>
-          <div class="_Violet">violet</div>
-          <div class="_Pink">pink</div>
-        </div>
-        <div class="color-box">
-          <div class="_Black">black</div>
-          <div class="_Gray">gray</div>
-          <div class="_Silver">silver</div>
-          <div class="_White">white</div>
-        </div>
-        <div class="color-box _my-10px">
-          <div class="_Info">info</div>
-          <div class="_Warn">warn</div>
-          <div class="_Error">error</div>
-        </div>
-        <div class="color-box">
-          <div class="_Ok">ok</div>
-          <div class="_Ng">ng</div>
-        </div>
-        <style>
-          .color-box {
-            overflow: hidden; /* height用 */
-            clear: both;
-          }
-          .color-box div {
-            overflow: auto;   /* height用 */
-            float: left;
-            margin: 0;
-            padding: 0;
-            width: 80px;
-            height: 40px;
-            line-height: 40px;
-            text-align: center
-          }
-        </style>
-      </div>
-      <h2 class="_lined">Compo</h2>
-      <div>
-        <h3 class="_lefted">ボタン</h3>
-        <div class="btn-box">
-          <button class="_Btn">Btn</button>
-          <button class="_Btn-Black">Btn-Black</button>
-          <button class="_Btn-red">Btn-red</button>
-          <button class="_Btn-Red">Btn-Red</button>
-          <button class="_Btn-blue">Btn-blue</button>
-          <button class="_Btn-Blue">Btn-Blue</button>
-          <button class="_Btn-yellow">Btn-yellow</button>
-          <button class="_Btn-Yellow">Btn-Yellow</button>
-          <button class="_Btn-orange">Btn-orange</button>
-          <button class="_Btn-Orange">Btn-Orange</button>
-        </div>
-        <div class="btn-box">
-          <button class="_Btn-info">Btn-info</button>
-          <button class="_Btn-Info">Btn-Info</button>
-          <button class="_Btn-warn">Btn-warn</button>
-          <button class="_Btn-Warn">Btn-Warn</button>
-          <button class="_Btn-error">Btn-error</button>
-          <button class="_Btn-Error">Btn-Error</button>
-        </div>
-        <div class="btn-box">
-          <button class="_Btn-ok">Btn-ok</button>
-          <button class="_Btn-Ok">Btn-Ok</button>
-          <button class="_Btn-ng">Btn-ng</button>
-          <button class="_Btn-Ng">Btn-Ng</button>
-        </div>
-        <div class="btn-box"><a class="_Btn-Blue">aタグ</a><a class="_Btn-Red">でも</a><a class="_Btn-Yellow">できるよ</a></div>
-        <div class="btn-box">
-          <div class="_Btn-blue">divタグ</div>
-          <div class="_Btn-red">でも</div>
-          <div class="_Btn-yellow">できるよ</div>
-        </div>
-        <style>
-          .btn-box {
-            margin: 10px 0
-          }
-        </style>
-      </div>
-      <div>
-        <h3 class="_lefted">カード</h3>
-        <div class="card-box">
-          <div class="_Card _w-300px">
-            <h4>カードの説明</h4>
-            <pre class="_code">.myCard {
+      <section>
+        <h2 class="_lined">Utils</h2>
+        <article>
+          <h3 class="_lefted">カラー</h3>
+          <div class="color-box">
+            <div class="_Red">red</div>
+            <div class="_Orange">orange</div>
+            <div class="_Yellow">yellow</div>
+          </div>
+          <div class="color-box">
+            <div class="_Teal">teal</div>
+            <div class="_Green">green</div>
+            <div class="_Lime">lime</div>
+          </div>
+          <div class="color-box">
+            <div class="_Navy">navy</div>
+            <div class="_Blue">blue</div>
+          </div>
+          <div class="color-box">
+            <div class="_Olive">olive</div>
+            <div class="_Brown">brown</div>
+          </div>
+          <div class="color-box">
+            <div class="_Purple">purple</div>
+            <div class="_Violet">violet</div>
+            <div class="_Pink">pink</div>
+          </div>
+          <div class="color-box">
+            <div class="_Black">black</div>
+            <div class="_Gray">gray</div>
+            <div class="_Silver">silver</div>
+            <div class="_White">white</div>
+          </div>
+          <div class="color-box _my-10px">
+            <div class="_Info">info</div>
+            <div class="_Warn">warn</div>
+            <div class="_Error">error</div>
+          </div>
+          <div class="color-box">
+            <div class="_Ok">ok</div>
+            <div class="_Ng">ng</div>
+          </div>
+          <style>
+            .color-box {
+              overflow: hidden; /* height用 */
+              clear: both;
+            }
+            .color-box div {
+              overflow: auto;   /* height用 */
+              float: left;
+              margin: 0;
+              padding: 0;
+              width: 80px;
+              height: 40px;
+              line-height: 40px;
+              text-align: center
+            }
+          </style>
+        </article>
+      </section>
+      <section>
+        <h2 class="_lined">Elems</h2>
+        <article>
+          <h3 class="_lefted">ボタン</h3>
+          <div class="btn-box">
+            <button class="_Btn">Btn</button>
+            <button class="_Btn-Black">Btn-Black</button>
+            <button class="_Btn-red">Btn-red</button>
+            <button class="_Btn-Red">Btn-Red</button>
+            <button class="_Btn-blue">Btn-blue</button>
+            <button class="_Btn-Blue">Btn-Blue</button>
+            <button class="_Btn-yellow">Btn-yellow</button>
+            <button class="_Btn-Yellow">Btn-Yellow</button>
+            <button class="_Btn-orange">Btn-orange</button>
+            <button class="_Btn-Orange">Btn-Orange</button>
+          </div>
+          <div class="btn-box">
+            <button class="_Btn-info">Btn-info</button>
+            <button class="_Btn-Info">Btn-Info</button>
+            <button class="_Btn-warn">Btn-warn</button>
+            <button class="_Btn-Warn">Btn-Warn</button>
+            <button class="_Btn-error">Btn-error</button>
+            <button class="_Btn-Error">Btn-Error</button>
+          </div>
+          <div class="btn-box">
+            <button class="_Btn-ok">Btn-ok</button>
+            <button class="_Btn-Ok">Btn-Ok</button>
+            <button class="_Btn-ng">Btn-ng</button>
+            <button class="_Btn-Ng">Btn-Ng</button>
+          </div>
+          <div class="btn-box"><a class="_Btn-Blue">aタグ</a><a class="_Btn-Red">でも</a><a class="_Btn-Yellow">できるよ</a></div>
+          <div class="btn-box">
+            <div class="_Btn-blue">divタグ</div>
+            <div class="_Btn-red">でも</div>
+            <div class="_Btn-yellow">できるよ</div>
+          </div>
+          <style>
+            .btn-box {
+              margin: 10px 0
+            }
+          </style>
+        </article>
+        <article>
+          <h3 class="_lefted">リスト</h3>
+          <div class="list-box">
+            <ul>
+              <li>item-1</li>
+              <li>item-2</li>
+              <li>item-3</li>
+            </ul>
+          </div>
+          <div class="list-box">
+            <!--ul._virticaled-->
+            <ul class="myList">
+              <li><a href="#">item-1</a></li>
+              <li><a href="#">item-2</a></li>
+              <li><a href="#">item-3</a></li>
+            </ul>
+            <p>水平メニューは基礎設定のみ提供する。細かい設定は「ul._virticaled」を継承して作るか「ul._virticaled」に属性を追加して作るかすること</p>
+            <h4>sassが使えるなら</h4>
+            <pre class="_code">.myList {
+  @extend ._virticaled
+  li {
+    background: #ccF;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
+}
+</pre>
+            <h4>styleタグ</h4>
+            <pre class="_code">ul._virticaled > li {
+  background: #ccF;
+  width: 100px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}</pre>
+          </div>
+          <style>
+            ul._virticaled > li {
+              background: #ccF;
+              width: 100px;
+              height: 60px;
+              line-height: 60px;
+              text-align: center;
+            }
+            /*
+            ._virticaled > li > a {
+              padding: 1rem
+            }
+            */
+          </style>
+        </article>
+      </section>
+      <section>
+        <h2 class="_lined">Compo</h2>
+        <article>
+          <h3 class="_lefted">カード</h3>
+          <div class="card-box">
+            <div class="_Card _w-300px">
+              <h4>カードの説明</h4>
+              <pre class="_code">.myCard {
   @extend ._Card-base
   .image
     // 設定
@@ -122,14 +182,15 @@
   .content
     // 設定
 }</pre>
-            <p>カードデザインについてはいくらデザイン作っても、実際に使う時どうせそのまま使えないので「._Card-base」という基本設定を持つクラスを@extendして、細かい部分は自前でカスタマイズすること。</p>
+              <p>カードデザインについてはいくらデザイン作っても、実際に使う時どうせそのまま使えないので「._Card-base」という基本設定を持つクラスを@extendして、細かい部分は自前でカスタマイズすること。</p>
+            </div>
           </div>
-        </div>
-        <style>
-          .card-box {
-          }
-        </style>
-      </div>
+          <style>
+            .card-box {
+            }
+          </style>
+        </article>
+      </section>
     </div>
     <style>
       body {
