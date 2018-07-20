@@ -22,3 +22,12 @@
   &._Th-large:before, &.Th-large_:after { content: '\f009'; font-weight:900; }
   &._Sign-out-alt:before, &.Sign-out-alt:after{ content: '\f2f5'; font-weight:900; }
 }
+input {
+  &._icon_, &._Icon_ {
+    font-family: "Font Awesome 5 Free";
+    line-height: 1;
+  }
+  &._Icon_ {
+    font-weight: 900;
+  }
+}
