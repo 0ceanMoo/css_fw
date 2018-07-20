@@ -3,20 +3,26 @@
 // ============================================== */
 // https://nippori30.hatenablog.com/entry/2018/05/01/174518
 
-._Card-base
-  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.10)
-  //box-shadow: 0 3px 6px #ccc;
 ._Card
-  @extend ._Card-base
-  > h4
+  box-sizing: border-box
+  display: inline-block
+  letter-spacing: normal
+  vertical-align: top
+  > *
     margin: 0
-    padding: .7rem 1rem
-    background: $card_head_bg
-    color: $card_head_color
-    //font-size: 1rem
-  > p
-    margin: 0
-    padding: .7rem 1rem
-    font-size: .9rem
-    color: $card_body_color
-    //background: $yellow
+    padding: 0
+  &._shadow
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.10)
+    //box-shadow: 0 3px 6px #ccc;
+
+// 継承サンプル
+  ._Card
+    @extend ._Card-base
+    > *
+      padding: .7rem 1rem
+    > h4
+      background: $card_head_bg
+      color: $card_head_color
+    > p
+      color: $card_body_color
+      //background: $yellow

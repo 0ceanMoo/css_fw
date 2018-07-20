@@ -122,15 +122,26 @@
             </ul>
           </div>
           <div class="list-box">
-            <!--ul._virticaled-->
-            <ul class="myList">
+            <ul class="my _virticaled">
               <li><a href="#">item-1</a></li>
               <li><a href="#">item-2</a></li>
               <li><a href="#">item-3</a></li>
             </ul>
-            <p>水平メニューは基礎設定のみ提供する。細かい設定は「ul._virticaled」を継承して作るか「ul._virticaled」に属性を追加して作るかすること</p>
-            <h4>sassが使えるなら</h4>
-            <pre class="_code">.myList {
+            <p>水平メニューは基礎設定のみ提供する。細かい設定は「ul._virticaled」にstyleを追加するか、sassが使えるなら「ul.my._virticaled」を継承して整える</p>
+            <div>
+              <h4>styleタグ</h4>
+              <pre class="_code">/* ul._virticaledに直接styleあてると、他にも影響するので「my」で影響範囲を絞ってる */
+ul.my._virticaled > li {
+  background: #ccF;
+  width: 100px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}</pre>
+            </div>
+            <div>
+              <h4>sassが使えるなら</h4>
+              <pre class="_code">.myList {
   @extend ._virticaled
   li {
     background: #ccF;
@@ -139,19 +150,11 @@
     line-height: 60px;
     text-align: center;
   }
-}
-</pre>
-            <h4>styleタグ</h4>
-            <pre class="_code">ul._virticaled > li {
-  background: #ccF;
-  width: 100px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
 }</pre>
+            </div>
           </div>
           <style>
-            ul._virticaled > li {
+            ul.my._virticaled > li {
               background: #ccF;
               width: 100px;
               height: 60px;
@@ -171,10 +174,29 @@
         <article>
           <h3 class="_lefted">カード</h3>
           <div class="card-box">
-            <div class="_Card _w-300px">
+            <div class="my _Card">
+              <h4>カードの説明</h4>
+              <pre class="_code">div.my._Card {
+  width: 300px;
+  margin-right: 1rem;
+}
+div.my._Card > * {
+  padding: .7rem 1rem;
+}
+div.my._Card > h4 {
+  background: black;
+  color: white;
+}
+div.my._Card > p {
+  color: #666;
+  font-size: .9rem
+}</pre>
+              <p>カードデザインについてはいくらデザイン作っても、実際に使う時どうせそのまま使えないので「._Card」という基本設定を持つクラスを@extendして、細かい部分は自前でカスタマイズすること。</p>
+            </div>
+            <div class="my _Card _shadow">
               <h4>カードの説明</h4>
               <pre class="_code">.myCard {
-  @extend ._Card-base
+  @extend ._Card
   .image
     // 設定
   .title
@@ -182,11 +204,52 @@
   .content
     // 設定
 }</pre>
-              <p>カードデザインについてはいくらデザイン作っても、実際に使う時どうせそのまま使えないので「._Card-base」という基本設定を持つクラスを@extendして、細かい部分は自前でカスタマイズすること。</p>
+              <p>カードデザインについてはいくらデザイン作っても、実際に使う時どうせそのまま使えないので「._Card」という基本設定を持つクラスを@extendして、細かい部分は自前でカスタマイズすること。</p>
+            </div>
+            <div class="my _Card _shadow">
+              <h4>タイトル</h4>
+              <p>本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
+            </div>
+            <div class="my _Card _shadow">
+              <h4>タイトル</h4>
+              <p>本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
+            </div>
+            <div class="my _Card _shadow">
+              <h4>タイトル</h4>
+              <p>本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
+            </div>
+            <div class="my _Card _shadow">
+              <h4>タイトル</h4>
+              <p>本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
+            </div>
+            <div class="my _Card _shadow">
+              <h4>タイトル</h4>
+              <p>本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
+            </div>
+            <div class="my _Card _shadow">
+              <h4>タイトル</h4>
+              <p>本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
             </div>
           </div>
           <style>
             .card-box {
+              letter-spacing: -1rem
+            }
+            div.my._Card {
+              width: 300px;
+              margin-right: 1rem;
+              margin-bottom: 1rem;
+            }
+            div.my._Card > * {
+              padding: .7rem 1rem;
+            }
+            div.my._Card > h4 {
+              background: black;
+              color: white;
+            }
+            div.my._Card > p {
+              color: #666;
+              font-size: .9rem
             }
           </style>
         </article>

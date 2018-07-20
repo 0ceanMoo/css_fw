@@ -1129,22 +1129,13 @@ ul li a {
   height: 100%;
 }
 
-ul._virticaled, .myList {
+ul._virticaled {
   font-size: 0;
 }
 
-ul._virticaled > li, .myList > li {
+ul._virticaled > li {
   display: inline-block;
   font-size: 1rem;
-}
-
-.myList li {
-  box-sizing: border-box;
-  background: #ccF;
-  width: 100px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
 }
 
 /* ==============================================
@@ -1420,20 +1411,18 @@ form input[type="text"]:invalid, form input[type="password"]:invalid, form input
 
 /* ==============================================
   Card */
-._Card-base, ._Card {
+._Card {
+  box-sizing: border-box;
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+}
+
+._Card > * {
+  margin: 0;
+  padding: 0;
+}
+
+._Card._shadow {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
-}
-
-._Card > h4 {
-  margin: 0;
-  padding: .7rem 1rem;
-  background: #000;
-  color: #fff;
-}
-
-._Card > p {
-  margin: 0;
-  padding: .7rem 1rem;
-  font-size: .9rem;
-  color: #000;
 }
