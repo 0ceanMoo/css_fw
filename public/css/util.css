@@ -1133,13 +1133,13 @@ ul li a {
   height: 100%;
 }
 
-ul._virticaled {
-  font-size: 0;
+ul._virticaled_ {
+  letter-spacing: -1rem;
 }
 
-ul._virticaled > li {
+ul._virticaled_ > li {
   display: inline-block;
-  font-size: 1rem;
+  letter-spacing: normal;
 }
 
 /* ==============================================
@@ -1447,10 +1447,17 @@ form input[type="text"]:invalid, form input[type="password"]:invalid, form input
 /* ==============================================
   Icons
 ============================================== */
-._icon:before {
+._icon:before, ._icon:after {
   font-family: "Font Awesome 5 Free";
-  margin-right: 5px;
   line-height: 1;
+}
+
+._icon:before {
+  margin-right: 5px;
+}
+
+._icon:after {
+  margin-left: 5px;
 }
 
 ._icon._heart:before {
@@ -1471,7 +1478,7 @@ form input[type="text"]:invalid, form input[type="password"]:invalid, form input
   font-weight: 900;
 }
 
-._icon._Lock:before {
+._icon._Lock:after {
   content: '\f023';
   font-weight: 900;
 }

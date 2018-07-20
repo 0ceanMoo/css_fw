@@ -6,14 +6,15 @@
 // Regular  400   アウトライン
 // Light    300   線が細いもの
 ._icon {
-  &:before {
+  &:before, &:after {
     font-family: "Font Awesome 5 Free";
-    margin-right: 5px;
     line-height: 1;
   }
+  &:before { margin-right: 5px; }
+  &:after { margin-left: 5px; }
   &._heart:before { content: '\f004'; }
   &._user:before  { content: '\f007'; }
   &._Heart:before { content: '\f004'; font-weight:900; }
   &._User:before  { content: '\f007'; font-weight:900; }
-  &._Lock:before  { content: '\f023'; font-weight:900; } // fas
+  &._Lock:after  { content: '\f023'; font-weight:900; } // fas
 }

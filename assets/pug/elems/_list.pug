@@ -5,17 +5,17 @@ h3._lefted リスト
     li._icon._User item-2
     li._icon._Lock item-3
 .list-box
-  ul.my._virticaled
+  ul.my._virticaled_
     li: a._icon._heart(href="#") item-1
     li: a._icon._user(href="#") item-2
     li: a(href="#") item-3
-  p 水平メニューは基礎設定のみ提供する。細かい設定は「ul._virticaled」にstyleを追加するか、sassが使えるなら「ul.my._virticaled」を継承して整える
+  p 水平メニューは基礎設定のみ提供する。細かい設定は「ul._virticaled_」にstyleを追加するか、sassが使えるなら「ul.my._virticaled_」を継承して整える
   div
     h4 styleタグ
     pre._code
       .
-        /* ul._virticaledに直接styleあてると、他にも影響するので「my」で影響範囲を絞ってる */
-        ul.my._virticaled > li {
+        /* ul._virticaled_に直接styleあてると、他にも影響するので「my」で影響範囲を絞ってる */
+        ul.my._virticaled_ > li {
           background: #ccF;
           width: 100px;
           height: 60px;
@@ -27,7 +27,7 @@ h3._lefted リスト
     pre._code
       .
         .myList {
-          @extend ._virticaled
+          @extend ._virticaled_
           li {
             background: #ccF;
             width: 200px;
@@ -38,7 +38,7 @@ h3._lefted リスト
         }
 style
   .
-    ul.my._virticaled > li {
+    ul.my._virticaled_ > li {
       background: #ccF;
       width: 100px;
       height: 60px;
@@ -46,7 +46,7 @@ style
       text-align: center;
     }
     /*
-    ._virticaled > li > a {
+    ._virticaled_ > li > a {
       padding: 1rem
     }
     */

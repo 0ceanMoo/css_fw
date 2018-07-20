@@ -123,16 +123,16 @@
             </ul>
           </div>
           <div class="list-box">
-            <ul class="my _virticaled">
+            <ul class="my _virticaled_">
               <li><a class="_icon _heart" href="#">item-1</a></li>
               <li><a class="_icon _user" href="#">item-2</a></li>
               <li><a href="#">item-3</a></li>
             </ul>
-            <p>水平メニューは基礎設定のみ提供する。細かい設定は「ul._virticaled」にstyleを追加するか、sassが使えるなら「ul.my._virticaled」を継承して整える</p>
+            <p>水平メニューは基礎設定のみ提供する。細かい設定は「ul._virticaled_」にstyleを追加するか、sassが使えるなら「ul.my._virticaled_」を継承して整える</p>
             <div>
               <h4>styleタグ</h4>
-              <pre class="_code">/* ul._virticaledに直接styleあてると、他にも影響するので「my」で影響範囲を絞ってる */
-ul.my._virticaled > li {
+              <pre class="_code">/* ul._virticaled_に直接styleあてると、他にも影響するので「my」で影響範囲を絞ってる */
+ul.my._virticaled_ > li {
   background: #ccF;
   width: 100px;
   height: 60px;
@@ -143,7 +143,7 @@ ul.my._virticaled > li {
             <div>
               <h4>sassが使えるなら</h4>
               <pre class="_code">.myList {
-  @extend ._virticaled
+  @extend ._virticaled_
   li {
     background: #ccF;
     width: 200px;
@@ -155,7 +155,7 @@ ul.my._virticaled > li {
             </div>
           </div>
           <style>
-            ul.my._virticaled > li {
+            ul.my._virticaled_ > li {
               background: #ccF;
               width: 100px;
               height: 60px;
@@ -163,7 +163,7 @@ ul.my._virticaled > li {
               text-align: center;
             }
             /*
-            ._virticaled > li > a {
+            ._virticaled_ > li > a {
               padding: 1rem
             }
             */
