@@ -1,7 +1,8 @@
 /* ==============================================
-  Card
+  Button
 // ============================================== */
 // https://copypet.jp/417/
+
 @mixin button($c: $black, $bg: $white, $bd: null, $h_c:null, $h_bg:null)
   @if not $h_c
     $h_c: $bg
@@ -16,74 +17,70 @@
     // bdでボーダーの色指定しなければ、文字色
     $bd: $c
 
-  box-sizing: border-box
-  display: inline-block
-  padding: .5rem 1.2rem .2rem
-  border: 1px solid
   border-color: $bd
   color: $c
   background: $bg
-  cursor: pointer
-  letter-spacing: normal
-  transition: .4s
   &:hover
     color: $h_c
     background: $h_bg
 
 .#{$prefix}Btn
   @include button
+  box-sizing: border-box
+  display: inline-block
+  padding: .5rem 1.2rem .2rem
+  border: 1px solid
+  cursor: pointer
+  letter-spacing: normal
+  transition: .4s
 
-.#{$prefix}Btn-Black
-  @include button($white, $black, 1)
+  &._Black_
+    @include button($white, $black, 1)
+  &._red_
+    @include button($red)
+  &._Red_
+    @include button($white, $red, 1)
+  &._blue_
+    @include button($blue)
+  &._Blue_
+    @include button($white, $blue, 1)
+  &._orange_
+    @include button($orange)
+  &._Orange_
+    @include button($white, $orange, 1)
+  &._teal_
+    @include button($teal)
+  &._Teal_
+    @include button($white, $teal, 1)
+  &._yellow_
+    @include button($gray, $white, $yellow, $black, $yellow)
+  &._Yellow_
+    @include button($black, $yellow, 1, $gray, $white)
+  &._pink_
+    @include button($gray, $white, $pink, $black, $pink)
+  &._Pink_
+    @include button($black, $pink, 1, $gray, $white)
 
-.#{$prefix}Btn-red
-  @include button($red)
-.#{$prefix}Btn-Red
-  @include button($white, $red, 1)
 
-.#{$prefix}Btn-blue
-  @include button($blue)
-.#{$prefix}Btn-Blue
-  @include button($white, $blue, 1)
+  &._info_
+    @extend .#{$prefix}Btn._blue_
+  &._Info_
+    @extend .#{$prefix}Btn._Blue_
 
-.#{$prefix}Btn-orange
-  @include button($orange)
-.#{$prefix}Btn-Orange
-  @include button($white, $orange, 1)
+  &._warn_
+    @extend .#{$prefix}Btn._yellow_
+  &._Warn_
+    @extend .#{$prefix}Btn._Yellow_
+  &._error_
+    @extend .#{$prefix}Btn._red_
+  &._Error_
+    @extend .#{$prefix}Btn._Red_
 
-.#{$prefix}Btn-teal
-  @include button($teal)
-.#{$prefix}Btn-Teal
-  @include button($white, $teal, 1)
-
-.#{$prefix}Btn-yellow
-  @include button($gray, $white, $yellow, $black, $yellow)
-.#{$prefix}Btn-Yellow
-  @include button($black, $yellow, 1, $gray, $white)
-
-.#{$prefix}Btn-pink
-  @include button($gray, $white, $pink, $black, $pink)
-.#{$prefix}Btn-Pink
-  @include button($black, $pink, 1, $gray, $white)
-
-.#{$prefix}Btn-info
-  @extend .#{$prefix}Btn-blue
-.#{$prefix}Btn-Info
-  @extend .#{$prefix}Btn-Blue
-.#{$prefix}Btn-warn
-  @extend .#{$prefix}Btn-yellow
-.#{$prefix}Btn-Warn
-  @extend .#{$prefix}Btn-Yellow
-.#{$prefix}Btn-error
-  @extend .#{$prefix}Btn-red
-.#{$prefix}Btn-Error
-  @extend .#{$prefix}Btn-Red
-
-.#{$prefix}Btn-ok
-  @extend .#{$prefix}Btn-teal
-.#{$prefix}Btn-Ok
-  @extend .#{$prefix}Btn-Teal
-.#{$prefix}Btn-ng
-  @extend .#{$prefix}Btn-pink
-.#{$prefix}Btn-Ng
-  @extend .#{$prefix}Btn-Pink
+  &._ok_
+    @extend .#{$prefix}Btn._teal_
+  &._Ok_
+    @extend .#{$prefix}Btn._Teal_
+  &._ng_
+    @extend .#{$prefix}Btn._pink_
+  &._Ng_
+    @extend .#{$prefix}Btn._Pink_
