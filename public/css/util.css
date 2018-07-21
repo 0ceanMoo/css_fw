@@ -929,6 +929,638 @@ a {
 ============================================== */
 /* font & background colors
 ---------------------------------------------- */
+.__c-fff {
+  color: #fff !important;
+}
+
+.__c-eee {
+  color: #eee !important;
+}
+
+.__c-ccc {
+  color: #ccc !important;
+}
+
+.__c-999 {
+  color: #999 !important;
+}
+
+.__c-666 {
+  color: #666 !important;
+}
+
+.__c-333 {
+  color: #333 !important;
+}
+
+.__c-000 {
+  color: #000 !important;
+}
+
+.__c-300 {
+  color: #300 !important;
+}
+
+.__c-030 {
+  color: #030 !important;
+}
+
+.__c-003 {
+  color: #003 !important;
+}
+
+.__c-033 {
+  color: #033 !important;
+}
+
+.__c-303 {
+  color: #303 !important;
+}
+
+.__c-330 {
+  color: #330 !important;
+}
+
+.__c-600 {
+  color: #600 !important;
+}
+
+.__c-060 {
+  color: #060 !important;
+}
+
+.__c-006 {
+  color: #006 !important;
+}
+
+.__c-066 {
+  color: #066 !important;
+}
+
+.__c-606 {
+  color: #606 !important;
+}
+
+.__c-660 {
+  color: #660 !important;
+}
+
+.__c-633 {
+  color: #633 !important;
+}
+
+.__c-363 {
+  color: #363 !important;
+}
+
+.__c-336 {
+  color: #336 !important;
+}
+
+.__c-366 {
+  color: #366 !important;
+}
+
+.__c-636 {
+  color: #636 !important;
+}
+
+.__c-663 {
+  color: #663 !important;
+}
+
+.__c-900 {
+  color: #900 !important;
+}
+
+.__c-090 {
+  color: #090 !important;
+}
+
+.__c-009 {
+  color: #009 !important;
+}
+
+.__c-099 {
+  color: #099 !important;
+}
+
+.__c-909 {
+  color: #909 !important;
+}
+
+.__c-990 {
+  color: #990 !important;
+}
+
+.__c-933 {
+  color: #933 !important;
+}
+
+.__c-393 {
+  color: #393 !important;
+}
+
+.__c-339 {
+  color: #339 !important;
+}
+
+.__c-399 {
+  color: #399 !important;
+}
+
+.__c-939 {
+  color: #939 !important;
+}
+
+.__c-993 {
+  color: #993 !important;
+}
+
+.__c-966 {
+  color: #966 !important;
+}
+
+.__c-696 {
+  color: #696 !important;
+}
+
+.__c-669 {
+  color: #669 !important;
+}
+
+.__c-699 {
+  color: #699 !important;
+}
+
+.__c-969 {
+  color: #969 !important;
+}
+
+.__c-996 {
+  color: #996 !important;
+}
+
+.__c-c33 {
+  color: #c33 !important;
+}
+
+.__c-3c3 {
+  color: #3c3 !important;
+}
+
+.__c-33c {
+  color: #33c !important;
+}
+
+.__c-3cc {
+  color: #3cc !important;
+}
+
+.__c-c3c {
+  color: #c3c !important;
+}
+
+.__c-cc3 {
+  color: #cc3 !important;
+}
+
+.__c-c66 {
+  color: #c66 !important;
+}
+
+.__c-6c6 {
+  color: #6c6 !important;
+}
+
+.__c-66c {
+  color: #66c !important;
+}
+
+.__c-6cc {
+  color: #6cc !important;
+}
+
+.__c-c6c {
+  color: #c6c !important;
+}
+
+.__c-cc6 {
+  color: #cc6 !important;
+}
+
+.__c-c99 {
+  color: #c99 !important;
+}
+
+.__c-9c9 {
+  color: #9c9 !important;
+}
+
+.__c-99c {
+  color: #99c !important;
+}
+
+.__c-9cc {
+  color: #9cc !important;
+}
+
+.__c-c9c {
+  color: #c9c !important;
+}
+
+.__c-cc9 {
+  color: #cc9 !important;
+}
+
+.__c-f66 {
+  color: #f66 !important;
+}
+
+.__c-6f6 {
+  color: #6f6 !important;
+}
+
+.__c-66f {
+  color: #66f !important;
+}
+
+.__c-6ff {
+  color: #6ff !important;
+}
+
+.__c-f6f {
+  color: #f6f !important;
+}
+
+.__c-ff6 {
+  color: #ff6 !important;
+}
+
+.__c-f99 {
+  color: #f99 !important;
+}
+
+.__c-9f9 {
+  color: #9f9 !important;
+}
+
+.__c-99f {
+  color: #99f !important;
+}
+
+.__c-9ff {
+  color: #9ff !important;
+}
+
+.__c-f9f {
+  color: #f9f !important;
+}
+
+.__c-ff9 {
+  color: #ff9 !important;
+}
+
+.__c-fcc {
+  color: #fcc !important;
+}
+
+.__c-cfc {
+  color: #cfc !important;
+}
+
+.__c-ccf {
+  color: #ccf !important;
+}
+
+.__c-cff {
+  color: #cff !important;
+}
+
+.__c-fcf {
+  color: #fcf !important;
+}
+
+.__c-ffc {
+  color: #ffc !important;
+}
+
+.__bg-fff {
+  background-color: #fff !important;
+}
+
+.__bg-eee {
+  background-color: #eee !important;
+}
+
+.__bg-ccc {
+  background-color: #ccc !important;
+}
+
+.__bg-999 {
+  background-color: #999 !important;
+}
+
+.__bg-666 {
+  background-color: #666 !important;
+}
+
+.__bg-333 {
+  background-color: #333 !important;
+}
+
+.__bg-000 {
+  background-color: #000 !important;
+}
+
+.__bg-300 {
+  background-color: #300 !important;
+}
+
+.__bg-030 {
+  background-color: #030 !important;
+}
+
+.__bg-003 {
+  background-color: #003 !important;
+}
+
+.__bg-033 {
+  background-color: #033 !important;
+}
+
+.__bg-303 {
+  background-color: #303 !important;
+}
+
+.__bg-330 {
+  background-color: #330 !important;
+}
+
+.__bg-600 {
+  background-color: #600 !important;
+}
+
+.__bg-060 {
+  background-color: #060 !important;
+}
+
+.__bg-006 {
+  background-color: #006 !important;
+}
+
+.__bg-066 {
+  background-color: #066 !important;
+}
+
+.__bg-606 {
+  background-color: #606 !important;
+}
+
+.__bg-660 {
+  background-color: #660 !important;
+}
+
+.__bg-633 {
+  background-color: #633 !important;
+}
+
+.__bg-363 {
+  background-color: #363 !important;
+}
+
+.__bg-336 {
+  background-color: #336 !important;
+}
+
+.__bg-366 {
+  background-color: #366 !important;
+}
+
+.__bg-636 {
+  background-color: #636 !important;
+}
+
+.__bg-663 {
+  background-color: #663 !important;
+}
+
+.__bg-900 {
+  background-color: #900 !important;
+}
+
+.__bg-090 {
+  background-color: #090 !important;
+}
+
+.__bg-009 {
+  background-color: #009 !important;
+}
+
+.__bg-099 {
+  background-color: #099 !important;
+}
+
+.__bg-909 {
+  background-color: #909 !important;
+}
+
+.__bg-990 {
+  background-color: #990 !important;
+}
+
+.__bg-933 {
+  background-color: #933 !important;
+}
+
+.__bg-393 {
+  background-color: #393 !important;
+}
+
+.__bg-339 {
+  background-color: #339 !important;
+}
+
+.__bg-399 {
+  background-color: #399 !important;
+}
+
+.__bg-939 {
+  background-color: #939 !important;
+}
+
+.__bg-993 {
+  background-color: #993 !important;
+}
+
+.__bg-966 {
+  background-color: #966 !important;
+}
+
+.__bg-696 {
+  background-color: #696 !important;
+}
+
+.__bg-669 {
+  background-color: #669 !important;
+}
+
+.__bg-699 {
+  background-color: #699 !important;
+}
+
+.__bg-969 {
+  background-color: #969 !important;
+}
+
+.__bg-996 {
+  background-color: #996 !important;
+}
+
+.__bg-c33 {
+  background-color: #c33 !important;
+}
+
+.__bg-3c3 {
+  background-color: #3c3 !important;
+}
+
+.__bg-33c {
+  background-color: #33c !important;
+}
+
+.__bg-3cc {
+  background-color: #3cc !important;
+}
+
+.__bg-c3c {
+  background-color: #c3c !important;
+}
+
+.__bg-cc3 {
+  background-color: #cc3 !important;
+}
+
+.__bg-c66 {
+  background-color: #c66 !important;
+}
+
+.__bg-6c6 {
+  background-color: #6c6 !important;
+}
+
+.__bg-66c {
+  background-color: #66c !important;
+}
+
+.__bg-6cc {
+  background-color: #6cc !important;
+}
+
+.__bg-c6c {
+  background-color: #c6c !important;
+}
+
+.__bg-cc6 {
+  background-color: #cc6 !important;
+}
+
+.__bg-c99 {
+  background-color: #c99 !important;
+}
+
+.__bg-9c9 {
+  background-color: #9c9 !important;
+}
+
+.__bg-99c {
+  background-color: #99c !important;
+}
+
+.__bg-9cc {
+  background-color: #9cc !important;
+}
+
+.__bg-c9c {
+  background-color: #c9c !important;
+}
+
+.__bg-cc9 {
+  background-color: #cc9 !important;
+}
+
+.__bg-f66 {
+  background-color: #f66 !important;
+}
+
+.__bg-6f6 {
+  background-color: #6f6 !important;
+}
+
+.__bg-66f {
+  background-color: #66f !important;
+}
+
+.__bg-6ff {
+  background-color: #6ff !important;
+}
+
+.__bg-f6f {
+  background-color: #f6f !important;
+}
+
+.__bg-ff6 {
+  background-color: #ff6 !important;
+}
+
+.__bg-f99 {
+  background-color: #f99 !important;
+}
+
+.__bg-9f9 {
+  background-color: #9f9 !important;
+}
+
+.__bg-99f {
+  background-color: #99f !important;
+}
+
+.__bg-9ff {
+  background-color: #9ff !important;
+}
+
+.__bg-f9f {
+  background-color: #f9f !important;
+}
+
+.__bg-ff9 {
+  background-color: #ff9 !important;
+}
+
+.__bg-fcc {
+  background-color: #fcc !important;
+}
+
+.__bg-cfc {
+  background-color: #cfc !important;
+}
+
+.__bg-ccf {
+  background-color: #ccf !important;
+}
+
+.__bg-cff {
+  background-color: #cff !important;
+}
+
+.__bg-fcf {
+  background-color: #fcf !important;
+}
+
+.__bg-ffc {
+  background-color: #ffc !important;
+}
+
 /* font colors
 ---------------------------------------------- */
 .__red, .__error {
@@ -987,67 +1619,67 @@ a {
 ---------------------------------------------- */
 .__Red, .__Error {
   color: white;
-  background: #f33;
+  background: #f33 !important;
 }
 
 .__Orange {
   color: white;
-  background: #F83;
+  background: #F83 !important;
 }
 
 .__Yellow, .__Warn {
   color: black;
-  background: #fd0;
+  background: #fd0 !important;
 }
 
 .__Olive {
   color: white;
-  background: #880;
+  background: #880 !important;
 }
 
 .__Green {
   color: white;
-  background: #3C6;
+  background: #3C6 !important;
 }
 
 .__Lime {
   color: black;
-  background: #0f0;
+  background: #0f0 !important;
 }
 
 .__Teal, .__Ok {
   color: white;
-  background: #399;
+  background: #399 !important;
 }
 
 .__Blue, .__Info {
   color: white;
-  background: #66C;
+  background: #66C !important;
 }
 
 .__Navy {
   color: white;
-  background: #036;
+  background: #036 !important;
 }
 
 .__Violet {
   color: black;
-  background: #e9e;
+  background: #e9e !important;
 }
 
 .__Purple {
   color: white;
-  background: #909;
+  background: #909 !important;
 }
 
 .__Pink, .__Ng {
   color: black;
-  background: #f99;
+  background: #f99 !important;
 }
 
 .__Brown {
   color: white;
-  background: #a22;
+  background: #a22 !important;
 }
 
 /* message colors
