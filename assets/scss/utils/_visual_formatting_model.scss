@@ -4,17 +4,17 @@
 
 /* display
 ---------------------------------------------- */
-.#{$prefix}block  { display: block        !important; }
-.#{$prefix}iblock { display: inline-block !important; }
-.#{$prefix}inline { display: inline       !important; }
-.#{$prefix}hidden { display: hidden       !important; }
+.#{$utils_prefix}block  { display: block        !important; }
+.#{$utils_prefix}iblock { display: inline-block !important; }
+.#{$utils_prefix}inline { display: inline       !important; }
+.#{$utils_prefix}hidden { display: hidden       !important; }
 
 /* position
 ---------------------------------------------- */
-.#{$prefix}fixed    { position: fixed; }
-.#{$prefix}relative { position: relative; }
-.#{$prefix}absolute { position: absolute; }
-.#{$prefix}flex     { position: flex; }
+.#{$utils_prefix}fixed    { position: fixed; }
+.#{$utils_prefix}relative { position: relative; }
+.#{$utils_prefix}absolute { position: absolute; }
+.#{$utils_prefix}flex     { position: flex; }
 
 /* width
 ---------------------------------------------- */
@@ -24,24 +24,24 @@
   $ww : #{$i * 10};
   $www: #{$i * 100};
   $wwh: #{($i * 100) - 50};
-  .#{$prefix}w-#{$ww}px { width:#{$ww}px  !important; }
-  .#{$prefix}w-#{$wwh}px{ width:#{$wwh}px !important; }
-  .#{$prefix}w-#{$www}px{ width:#{$www}px !important; }
+  .#{$utils_prefix}w-#{$ww}px { width:#{$ww}px  !important; }
+  .#{$utils_prefix}w-#{$wwh}px{ width:#{$wwh}px !important; }
+  .#{$utils_prefix}w-#{$www}px{ width:#{$www}px !important; }
 }
 
 // 5-100%を、5間隔で作る
 @for $i from 1 through 20 {
   $pct: #{$i *  5};
-  .#{$prefix}w-#{$pct}pct { width:#{$pct}#{"%"} !important; }
+  .#{$utils_prefix}w-#{$pct}pct { width:#{$pct}#{"%"} !important; }
 }
 
 /* vertical-align
 ---------------------------------------------- */
-.#{$prefix}top    { vertical-align: top     !important; }
-.#{$prefix}middle { vertical-align: middle  !important; }
-.#{$prefix}bottom { vertical-align: bottom  !important; }
+.#{$utils_prefix}top    { vertical-align: top     !important; }
+.#{$utils_prefix}middle { vertical-align: middle  !important; }
+.#{$utils_prefix}bottom { vertical-align: bottom  !important; }
 
 /* float
 ---------------------------------------------- */
-.#{$prefix}f-left   { float: left }
-.#{$prefix}f-right  { float: right }
+.#{$utils_prefix}f-left   { float: left }
+.#{$utils_prefix}f-right  { float: right }

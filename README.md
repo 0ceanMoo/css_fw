@@ -3,6 +3,15 @@ css_fw
 
 dddrを参考にすること
 
+BEMのアイデア
+
+```
+_Component
+--modifier
+__utils
+```
+
+
 最新情報
 ----
 やっぱりコンポネントも自分で作ろう
