@@ -3,7 +3,7 @@
 // ============================================== */
 // https://copypet.jp/417/
 
-@mixin button($c: $black, $bg: $white, $bd: null, $h_c:null, $h_bg:null)
+@mixin button($c: black, $bg: white, $bd: null, $h_c:null, $h_bg:null)
   @if not $h_c
     $h_c: $bg
   @if not $h_bg
@@ -35,31 +35,31 @@
   transition: .4s
 
   &._Black_
-    @include button($white, $black, 1)
+    @include button(white, black, 1)
   &._red_
     @include button($red)
   &._Red_
-    @include button($white, $red, 1)
+    @include button(white, $red, 1)
   &._blue_
     @include button($blue)
   &._Blue_
-    @include button($white, $blue, 1)
+    @include button(white, $blue, 1)
   &._orange_
     @include button($orange)
   &._Orange_
-    @include button($white, $orange, 1)
+    @include button(white, $orange, 1)
   &._teal_
     @include button($teal)
   &._Teal_
-    @include button($white, $teal, 1)
+    @include button(white, $teal, 1)
   &._yellow_
-    @include button($gray, $white, $yellow, $black, $yellow)
+    @include button(#983, white, $yellow, white, $yellow)
   &._Yellow_
-    @include button($black, $yellow, 1, $gray, $white)
+    @include button(black, $yellow, 1, #983, white)
   &._pink_
-    @include button($gray, $white, $pink, $black, $pink)
+    @include button(#c66, white, $pink, white, $pink)
   &._Pink_
-    @include button($black, $pink, 1, $gray, $white)
+    @include button(black, $pink, 1, #c66, white)
 
 
   &._info_

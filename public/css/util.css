@@ -931,159 +931,123 @@ a {
 ---------------------------------------------- */
 /* font colors
 ---------------------------------------------- */
-._red {
-  color: #f33;
+._red, ._error {
+  color: #f33 !important;
 }
 
 ._orange {
-  color: #F83;
+  color: #F83 !important;
 }
 
-._yellow {
-  color: #fd0;
+._yellow, ._warn {
+  color: #fd0 !important;
 }
 
 ._olive {
-  color: #880;
+  color: #880 !important;
 }
 
 ._green {
-  color: #3C6;
+  color: #3C6 !important;
 }
 
 ._lime {
-  color: #0f0;
+  color: #0f0 !important;
 }
 
-._teal {
-  color: #399;
+._teal, ._ok {
+  color: #399 !important;
 }
 
-._blue {
-  color: #66C;
+._blue, ._info {
+  color: #66C !important;
 }
 
 ._navy {
-  color: #036;
+  color: #036 !important;
 }
 
 ._violet {
-  color: #e9e;
+  color: #e9e !important;
 }
 
 ._purple {
-  color: #909;
+  color: #909 !important;
 }
 
-._pink {
-  color: #f99;
+._pink, ._ng {
+  color: #f99 !important;
 }
 
 ._brown {
-  color: #a22;
-}
-
-._gray {
-  color: #999;
-}
-
-._silver {
-  color: #eee;
-}
-
-._black {
-  color: #000;
-}
-
-._white {
-  color: #000;
+  color: #a22 !important;
 }
 
 /* background colors
 ---------------------------------------------- */
 ._Red, ._Error {
-  color: #fff;
+  color: white;
   background: #f33;
 }
 
 ._Orange {
-  color: #fff;
+  color: white;
   background: #F83;
 }
 
 ._Yellow, ._Warn {
-  color: #000;
+  color: black;
   background: #fd0;
 }
 
 ._Olive {
-  color: #fff;
+  color: white;
   background: #880;
 }
 
 ._Green {
-  color: #000;
+  color: white;
   background: #3C6;
 }
 
 ._Lime {
-  color: #000;
+  color: black;
   background: #0f0;
 }
 
 ._Teal, ._Ok {
-  color: #fff;
+  color: white;
   background: #399;
 }
 
 ._Blue, ._Info {
-  color: #fff;
+  color: white;
   background: #66C;
 }
 
 ._Navy {
-  color: #fff;
+  color: white;
   background: #036;
 }
 
 ._Violet {
-  color: #000;
+  color: black;
   background: #e9e;
 }
 
 ._Purple {
-  color: #fff;
+  color: white;
   background: #909;
 }
 
 ._Pink, ._Ng {
-  color: #000;
+  color: black;
   background: #f99;
 }
 
 ._Brown {
-  color: #fff;
+  color: white;
   background: #a22;
-}
-
-._Gray {
-  color: #fff;
-  background: #999;
-}
-
-._Silver {
-  color: #000;
-  background: #eee;
-}
-
-._Black {
-  color: #fff;
-  background: #000;
-}
-
-._White {
-  color: #000;
-  background: #fff;
 }
 
 /* message colors
@@ -1155,9 +1119,9 @@ ul._virticaled_ > li {
 /* ==============================================
   Button */
 ._Btn {
-  border-color: #000;
-  color: #000;
-  background: #fff;
+  border-color: black;
+  color: black;
+  background: white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
@@ -1170,151 +1134,151 @@ ul._virticaled_ > li {
 }
 
 ._Btn:hover {
-  color: #fff;
-  background: #000;
+  color: white;
+  background: black;
 }
 
 ._Btn._Black_ {
-  border-color: #000;
-  color: #fff;
-  background: #000;
+  border-color: black;
+  color: white;
+  background: black;
 }
 
 ._Btn._Black_:hover {
-  color: #000;
-  background: #fff;
+  color: black;
+  background: white;
 }
 
 ._Btn._red_, ._Btn._error_ {
   border-color: #f33;
   color: #f33;
-  background: #fff;
+  background: white;
 }
 
 ._Btn._red_:hover, ._Btn._error_:hover {
-  color: #fff;
+  color: white;
   background: #f33;
 }
 
 ._Btn._Red_, ._Btn._Error_ {
   border-color: #f33;
-  color: #fff;
+  color: white;
   background: #f33;
 }
 
 ._Btn._Red_:hover, ._Btn._Error_:hover {
   color: #f33;
-  background: #fff;
+  background: white;
 }
 
 ._Btn._blue_, ._Btn._info_ {
   border-color: #66C;
   color: #66C;
-  background: #fff;
+  background: white;
 }
 
 ._Btn._blue_:hover, ._Btn._info_:hover {
-  color: #fff;
+  color: white;
   background: #66C;
 }
 
 ._Btn._Blue_, ._Btn._Info_ {
   border-color: #66C;
-  color: #fff;
+  color: white;
   background: #66C;
 }
 
 ._Btn._Blue_:hover, ._Btn._Info_:hover {
   color: #66C;
-  background: #fff;
+  background: white;
 }
 
 ._Btn._orange_ {
   border-color: #F83;
   color: #F83;
-  background: #fff;
+  background: white;
 }
 
 ._Btn._orange_:hover {
-  color: #fff;
+  color: white;
   background: #F83;
 }
 
 ._Btn._Orange_ {
   border-color: #F83;
-  color: #fff;
+  color: white;
   background: #F83;
 }
 
 ._Btn._Orange_:hover {
   color: #F83;
-  background: #fff;
+  background: white;
 }
 
 ._Btn._teal_, ._Btn._ok_ {
   border-color: #399;
   color: #399;
-  background: #fff;
+  background: white;
 }
 
 ._Btn._teal_:hover, ._Btn._ok_:hover {
-  color: #fff;
+  color: white;
   background: #399;
 }
 
 ._Btn._Teal_, ._Btn._Ok_ {
   border-color: #399;
-  color: #fff;
+  color: white;
   background: #399;
 }
 
 ._Btn._Teal_:hover, ._Btn._Ok_:hover {
   color: #399;
-  background: #fff;
+  background: white;
 }
 
 ._Btn._yellow_, ._Btn._warn_ {
   border-color: #fd0;
-  color: #999;
-  background: #fff;
+  color: #983;
+  background: white;
 }
 
 ._Btn._yellow_:hover, ._Btn._warn_:hover {
-  color: #000;
+  color: white;
   background: #fd0;
 }
 
 ._Btn._Yellow_, ._Btn._Warn_ {
   border-color: #fd0;
-  color: #000;
+  color: black;
   background: #fd0;
 }
 
 ._Btn._Yellow_:hover, ._Btn._Warn_:hover {
-  color: #999;
-  background: #fff;
+  color: #983;
+  background: white;
 }
 
 ._Btn._pink_, ._Btn._ng_ {
   border-color: #f99;
-  color: #999;
-  background: #fff;
+  color: #c66;
+  background: white;
 }
 
 ._Btn._pink_:hover, ._Btn._ng_:hover {
-  color: #000;
+  color: white;
   background: #f99;
 }
 
 ._Btn._Pink_, ._Btn._Ng_ {
   border-color: #f99;
-  color: #000;
+  color: black;
   background: #f99;
 }
 
 ._Btn._Pink_:hover, ._Btn._Ng_:hover {
-  color: #999;
-  background: #fff;
+  color: #c66;
+  background: white;
 }
 
 /* ==============================================

@@ -10,18 +10,6 @@
 //);
 //
 //@each $e, $p in $cbc {
-//  .#{$prefix}#{$e}-red    { #{$p}: #{$red};   }
-//  .#{$prefix}#{$e}-orange { #{$p}: #{$orange};}
-//  .#{$prefix}#{$e}-yellow { #{$p}: #{$yellow};}
-//  .#{$prefix}#{$e}-green  { #{$p}: #{$green}; }
-//  .#{$prefix}#{$e}-teal   { #{$p}: #{$teal};  }
-//  .#{$prefix}#{$e}-blue   { #{$p}: #{$blue};  }
-//  .#{$prefix}#{$e}-pink   { #{$p}: #{$pink};  }
-//  .#{$prefix}#{$e}-brown  { #{$p}: #{$brown}; }
-//  .#{$prefix}#{$e}-grey   { #{$p}: #{$grey};  }
-//  .#{$prefix}#{$e}-black  { #{$p}: #{$black}; }
-//  .#{$prefix}#{$e}-white  { #{$p}: #{$white}; }
-//
 //  .#{$prefix}#{$e}-eee { #{$p}: #eee; }
 //  .#{$prefix}#{$e}-ccc { #{$p}: #ccc; }
 //  .#{$prefix}#{$e}-999 { #{$p}: #999; }
@@ -52,43 +40,43 @@
 
 /* font colors
 ---------------------------------------------- */
-.#{$prefix}red    { color: #{$red};   }
-.#{$prefix}orange { color: #{$orange};}
-.#{$prefix}yellow { color: #{$yellow};}
-.#{$prefix}olive  { color: #{$olive}; }
-.#{$prefix}green  { color: #{$green}; }
-.#{$prefix}lime   { color: #{$lime};  }
-.#{$prefix}teal   { color: #{$teal};  }
-.#{$prefix}blue   { color: #{$blue};  }
-.#{$prefix}navy   { color: #{$navy};  }
-.#{$prefix}violet { color: #{$violet};}
-.#{$prefix}purple { color: #{$purple};}
-.#{$prefix}pink   { color: #{$pink};  }
-.#{$prefix}brown  { color: #{$brown}; }
-.#{$prefix}gray   { color: #{$gray};  }
-.#{$prefix}silver { color: #{$silver};  }
-.#{$prefix}black  { color: #{$black}; }
-.#{$prefix}white  { color: #{$black}; }
+.#{$prefix}red    { color: #{$red}    !important; }
+.#{$prefix}orange { color: #{$orange} !important; }
+.#{$prefix}yellow { color: #{$yellow} !important; }
+.#{$prefix}olive  { color: #{$olive}  !important; }
+.#{$prefix}green  { color: #{$green}  !important; }
+.#{$prefix}lime   { color: #{$lime}   !important; }
+.#{$prefix}teal   { color: #{$teal}   !important; }
+.#{$prefix}blue   { color: #{$blue}   !important; }
+.#{$prefix}navy   { color: #{$navy}   !important; }
+.#{$prefix}violet { color: #{$violet} !important; }
+.#{$prefix}purple { color: #{$purple} !important; }
+.#{$prefix}pink   { color: #{$pink}   !important; }
+.#{$prefix}brown  { color: #{$brown}  !important; }
+//.#{$prefix}gray   { color: #{$gray}   !important; }
+//.#{$prefix}silver { color: #{$silver} !important; }
+//.#{$prefix}black  { color: #{$black}  !important; }
+//.#{$prefix}white  { color: #{$white}  !important; }
 
 /* background colors
 ---------------------------------------------- */
-.#{$prefix}Red    { color: $white; background: $red;    }
-.#{$prefix}Orange { color: $white; background: $orange; }
-.#{$prefix}Yellow { color: $black; background: $yellow; }
-.#{$prefix}Olive  { color: $white; background: $olive;  }
-.#{$prefix}Green  { color: $black; background: $green;  }
-.#{$prefix}Lime   { color: $black; background: $lime;   }
-.#{$prefix}Teal   { color: $white; background: $teal;   }
-.#{$prefix}Blue   { color: $white; background: $blue;   }
-.#{$prefix}Navy   { color: $white; background: $navy;   }
-.#{$prefix}Violet { color: $black; background: $violet; }
-.#{$prefix}Purple { color: $white; background: $purple; }
-.#{$prefix}Pink   { color: $black; background: $pink;   }
-.#{$prefix}Brown  { color: $white; background: $brown;  }
-.#{$prefix}Gray   { color: $white; background: $gray;   }
-.#{$prefix}Silver { color: $black; background: $silver; }
-.#{$prefix}Black  { color: $white; background: $black;  }
-.#{$prefix}White  { color: $black; background: $white;  }
+.#{$prefix}Red    { color: white; background: $red;    }
+.#{$prefix}Orange { color: white; background: $orange; }
+.#{$prefix}Yellow { color: black; background: $yellow; }
+.#{$prefix}Olive  { color: white; background: $olive;  }
+.#{$prefix}Green  { color: white; background: $green;  }
+.#{$prefix}Lime   { color: black; background: $lime;   }
+.#{$prefix}Teal   { color: white; background: $teal;   }
+.#{$prefix}Blue   { color: white; background: $blue;   }
+.#{$prefix}Navy   { color: white; background: $navy;   }
+.#{$prefix}Violet { color: black; background: $violet; }
+.#{$prefix}Purple { color: white; background: $purple; }
+.#{$prefix}Pink   { color: black; background: $pink;   }
+.#{$prefix}Brown  { color: white; background: $brown;  }
+//.#{$prefix}Gray   { color: $white; background: $gray;   }
+//.#{$prefix}Silver { color: $black; background: $silver; }
+//.#{$prefix}Black  { color: $white; background: $black;  }
+//.#{$prefix}White  { color: $black; background: $white;  }
 
 /* message colors
 ---------------------------------------------- */
@@ -97,5 +85,11 @@
 .#{$prefix}Error  { @extend .#{$prefix}Red;   }
 .#{$prefix}Ok     { @extend .#{$prefix}Teal; }
 .#{$prefix}Ng     { @extend .#{$prefix}Pink;  }
+
+.#{$prefix}info   { @extend .#{$prefix}blue;  }
+.#{$prefix}warn   { @extend .#{$prefix}yellow;}
+.#{$prefix}error  { @extend .#{$prefix}red;   }
+.#{$prefix}ok     { @extend .#{$prefix}teal; }
+.#{$prefix}ng     { @extend .#{$prefix}pink;  }
 
 
