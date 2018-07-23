@@ -2036,3 +2036,28 @@ input._Far, input._Fas {
 input._Fas {
   font-weight: 900;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+table.--striped tr:nth-child(even) {
+  background: #f3f3f3;
+}
+
+table.--hoverd tr:hover {
+  background: #ffe;
+}
+
+table tr {
+  border-bottom: 1px solid #eee;
+}
+
+table._Th thead {
+  color: white;
+  background: black;
+}
+
+table._Th thead th {
+  border: solid 1px white;
+}
