@@ -2053,8 +2053,9 @@ table.--hoverd tbody tr:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
-  padding: .4rem 1rem;
+  padding: .2rem 1rem;
   vertical-align: top;
+  font-size: .9rem;
 }
 
 ._Tag.--radius {
@@ -2063,5 +2064,5 @@ table.--hoverd tbody tr:hover {
 
 ._Tag.--borderd {
   border: .1rem solid;
-  padding: .36rem 1rem;
+  padding: .18rem 1rem;
 }
