@@ -1729,7 +1729,7 @@ a {
   color: #f99;
 }
 
-.__Base, .SampleCard > h4, table.SampleTable thead {
+.__Base, .SampleList li, .SampleCard > h4, table.SampleTable thead {
   color: white;
   background: #036;
 }
@@ -1805,13 +1805,20 @@ ul li a {
   height: 100%;
 }
 
-ul.--virticaled {
+ul.--virticaled, .SampleList {
   letter-spacing: -1rem;
 }
 
-ul.--virticaled > li {
+ul.--virticaled > li, .SampleList > li {
   display: inline-block;
   letter-spacing: normal;
+}
+
+.SampleList li {
+  width: 100px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
 }
 
 /* ==============================================

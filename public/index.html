@@ -241,7 +241,7 @@
             </ul>
           </div>
           <div class="list-box">
-            <ul class="my --virticaled">
+            <ul class="SampleList">
               <li><a class="_Far --heart" href="#">item-1</a></li>
               <li><a class="_Far --user" href="#">item-2</a></li>
               <li><a href="#">item-3</a></li>
@@ -260,16 +260,15 @@ ul.my.--virticaled > li {
             </div>
             <div>
               <h4>sassが使えるなら</h4>
-              <pre class="--code">.myList {
-  @extend .--virticaled
-  li {
-    background: #ccF;
-    width: 200px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-  }
-}</pre>
+              <pre class="--code">.SampleList
+  @extend ul.#{$modif_prefix}virticaled
+  li
+    @extend .#{$utils_prefix}Base
+    box-sizing: border-box
+    width: 100px
+    height: 60px
+    line-height: 60px
+    text-align: center</pre>
             </div>
           </div>
           <style>
@@ -280,11 +279,6 @@ ul.my.--virticaled > li {
               line-height: 60px;
               text-align: center;
             }
-            /*
-            .--virticaled > li > a {
-              padding: 1rem
-            }
-            */
           </style>
         </article>
       </section>
