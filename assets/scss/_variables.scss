@@ -28,23 +28,20 @@ $violet         : #e9e;
 $purple         : #909;
 $pink           : #f99;
 $brown          : #a22;
-//$gray           : #999;
-//$silver         : #eee;
-//$black          : #000;
-//$white          : #fff;
 
 //  site colors
 // -----------------------------------------------
-$pColor : black;
-$sColor : white;
+$color-bg     : $navy;
+$color-main   : #66c;
+$color-accent : $orange;
 
 //  message colors
 // -----------------------------------------------
-//$info     : $blue;
-//$warn     : $yellow;
-//$error    : $red;
-//$ok       : $green;
-//$ng       : $pink;
+$color-info : $blue;
+$color-warn : $yellow;
+$color-error: $red;
+$color-ok   : $teal;
+$color-ng   : $pink;
 
 // ===============================================
 //  Cards

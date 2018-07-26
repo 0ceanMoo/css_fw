@@ -1563,7 +1563,7 @@ a {
 
 /* font colors
 ---------------------------------------------- */
-.__red, .__error {
+.__red {
   color: #f33;
 }
 
@@ -1571,7 +1571,7 @@ a {
   color: #F83;
 }
 
-.__yellow, .__warn {
+.__yellow {
   color: #fd0;
 }
 
@@ -1587,11 +1587,11 @@ a {
   color: #0f0;
 }
 
-.__teal, .__ok {
+.__teal {
   color: #399;
 }
 
-.__blue, .__info {
+.__blue {
   color: #66C;
 }
 
@@ -1607,7 +1607,7 @@ a {
   color: #909;
 }
 
-.__pink, .__ng {
+.__pink {
   color: #f99;
 }
 
@@ -1617,7 +1617,7 @@ a {
 
 /* background colors
 ---------------------------------------------- */
-.__Red, .__Error {
+.__Red {
   color: white;
   background: #f33;
 }
@@ -1627,7 +1627,7 @@ a {
   background: #F83;
 }
 
-.__Yellow, .__Warn {
+.__Yellow {
   color: black;
   background: #fd0;
 }
@@ -1647,12 +1647,12 @@ a {
   background: #0f0;
 }
 
-.__Teal, .__Ok {
+.__Teal {
   color: white;
   background: #399;
 }
 
-.__Blue, .__Info {
+.__Blue {
   color: white;
   background: #66C;
 }
@@ -1672,7 +1672,7 @@ a {
   background: #909;
 }
 
-.__Pink, .__Ng {
+.__Pink {
   color: black;
   background: #f99;
 }
@@ -1684,6 +1684,66 @@ a {
 
 /* message colors
 ---------------------------------------------- */
+.__Info {
+  color: white;
+  background: #66C;
+}
+
+.__Warn {
+  color: black;
+  background: #fd0;
+}
+
+.__Error {
+  color: white;
+  background: #f33;
+}
+
+.__Ok {
+  color: white;
+  background: #399;
+}
+
+.__Ng {
+  color: black;
+  background: #f99;
+}
+
+.__info {
+  color: #66C;
+}
+
+.__warn {
+  color: #fd0;
+}
+
+.__error {
+  color: #f33;
+}
+
+.__ok {
+  color: #399;
+}
+
+.__ng {
+  color: #f99;
+}
+
+.__Base {
+  color: white;
+  background: #036;
+}
+
+.__Main {
+  color: white;
+  background: #66c;
+}
+
+.__Accent {
+  color: white;
+  background: #F83;
+}
+
 /* ==============================================
   Utils
 ============================================== */

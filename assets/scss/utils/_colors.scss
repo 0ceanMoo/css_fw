@@ -118,10 +118,6 @@ $cbc: (
 .#{$utils_prefix}purple { color: #{$purple} /* !important; */ }
 .#{$utils_prefix}pink   { color: #{$pink}   /* !important; */ }
 .#{$utils_prefix}brown  { color: #{$brown}  /* !important; */ }
-//.#{$prefix}gray   { color: #{$gray}   !important; }
-//.#{$prefix}silver { color: #{$silver} !important; }
-//.#{$prefix}black  { color: #{$black}  !important; }
-//.#{$prefix}white  { color: #{$white}  !important; }
 
 /* background colors
 ---------------------------------------------- */
@@ -138,23 +134,21 @@ $cbc: (
 .#{$utils_prefix}Purple { color: white; background: $purple /* !important; */ }
 .#{$utils_prefix}Pink   { color: black; background: $pink   /* !important; */ }
 .#{$utils_prefix}Brown  { color: white; background: $brown  /* !important; */ }
-//.#{$prefix}Gray   { color: $white; background: $gray;   }
-//.#{$prefix}Silver { color: $black; background: $silver; }
-//.#{$prefix}Black  { color: $white; background: $black;  }
-//.#{$prefix}White  { color: $black; background: $white;  }
 
 /* message colors
 ---------------------------------------------- */
-.#{$utils_prefix}Info   { @extend .#{$utils_prefix}Blue;  }
-.#{$utils_prefix}Warn   { @extend .#{$utils_prefix}Yellow;}
-.#{$utils_prefix}Error  { @extend .#{$utils_prefix}Red;   }
-.#{$utils_prefix}Ok     { @extend .#{$utils_prefix}Teal;  }
-.#{$utils_prefix}Ng     { @extend .#{$utils_prefix}Pink;  }
+.#{$utils_prefix}Info   { color: white; background: $color-info   /* !important; */ }
+.#{$utils_prefix}Warn   { color: black; background: $color-warn   /* !important; */ }
+.#{$utils_prefix}Error  { color: white; background: $color-error  /* !important; */ }
+.#{$utils_prefix}Ok     { color: white; background: $color-ok     /* !important; */ }
+.#{$utils_prefix}Ng     { color: black; background: $color-ng     /* !important; */ }
 
-.#{$utils_prefix}info   { @extend .#{$utils_prefix}blue;  }
-.#{$utils_prefix}warn   { @extend .#{$utils_prefix}yellow;}
-.#{$utils_prefix}error  { @extend .#{$utils_prefix}red;   }
-.#{$utils_prefix}ok     { @extend .#{$utils_prefix}teal;  }
-.#{$utils_prefix}ng     { @extend .#{$utils_prefix}pink;  }
+.#{$utils_prefix}info   { color: $color-info  }
+.#{$utils_prefix}warn   { color: $color-warn  }
+.#{$utils_prefix}error  { color: $color-error }
+.#{$utils_prefix}ok     { color: $color-ok    }
+.#{$utils_prefix}ng     { color: $color-ng    }
 
-
+.#{$utils_prefix}Base   { color: white; background: $color-bg }
+.#{$utils_prefix}Main   { color: white; background: $color-main}
+.#{$utils_prefix}Accent { color: white; background: $color-accent}
