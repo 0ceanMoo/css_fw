@@ -10,13 +10,13 @@
   vertical-align: top
 
 // 継承サンプル
-  .myCard
-    @extend ._Card
-    > *
-      padding: .7rem 1rem
-    > h4
-      background: $card_head_bg
-      color: $card_head_color
-    > p
-      color: $card_body_color
-      //background: $yellow
+.SampleCard
+  @extend .#{$compo_prefix}Card
+  width: 400px
+  > *
+    padding: .7rem 1rem
+  > h4
+    @extend .#{$utils_prefix}Base
+    color: white
+  > p
+    @extend .#{$utils_prefix}base

@@ -2,10 +2,10 @@ table
   //border-collapse: separate
   //border-spacing: 0
   border-collapse: collapse
-  &.--striped
+  &.#{$modif_prefix}striped
     tr:nth-child(even)
       background: #f3f3f3
-  &.--hoverd
+  &.#{$modif_prefix}hoverd
     tbody
       tr:hover
         background: #ffe
@@ -14,11 +14,12 @@ table
   //td
 
 // 継承サンプル
-  .myTable
-    @extend &.--striped
-    @extend &.--hoverd
-    thead
-      color: white
-      background: black
-      th
-        border: solid 2px white
+table.SampleTable
+  @extend .#{$modif_prefix}striped
+  @extend .#{$modif_prefix}hoverd
+  width: 100%
+
+  thead
+    @extend .#{$utils_prefix}Base
+    th
+      border: solid 2px white

@@ -355,17 +355,22 @@ div.my._Card > p {
 }</pre>
               <p>カードデザインについてはいくらデザイン作っても、実際に使う時どうせそのまま使えないので「._Card」という基本設定を持つクラスを@extendして、細かい部分は自前でカスタマイズすること。</p>
             </div>
-            <div class="my _Card">
+            <div class="SampleCard">
               <h4>カードの説明</h4>
-              <pre class="--code">.myCard {
-  @extend ._Card
-  .image
-    // 設定
-  .title
-    // 設定
-  .content
-    // 設定
-}</pre>
+              <pre class="--code">// pug
+.SampleCard
+
+// sass
+.SampleCard
+  @extend .#{$compo_prefix}Card
+  width: 400px
+  > *
+    padding: .7rem 1rem
+  > h4
+    @extend .#{$utils_prefix}Base
+    color: white
+  > p
+    @extend .#{$utils_prefix}base</pre>
               <p>カードデザインについてはいくらデザイン作っても、実際に使う時どうせそのまま使えないので「._Card」という基本設定を持つクラスを@extendして、細かい部分は自前でカスタマイズすること。</p>
             </div>
           </div>
@@ -420,7 +425,7 @@ div.my._Card > p {
         <article>
           <h3 class="--lefted">テーブル</h3>
           <div class="tbl-box __mb-20px">
-            <table class="myTable --striped --hoverd __w-100pct">
+            <table class="my Table --striped --hoverd __w-100pct">
               <thead>
                 <tr>
                   <th>AAA</th>
@@ -460,23 +465,75 @@ div.my._Card > p {
 table.myTable.--striped.--hoverd.__w-100pct
 
 // css
-.myTable thead {
+.my.Table thead {
   color: white;
   background: black;
 }
-.myTable th {
+.my.Table th {
   border: solid 2px white;
+}</pre>
+          </div>
+          <div class="tbl-box __mb-20px">
+            <table class="SampleTable __w-100pct">
+              <thead>
+                <tr>
+                  <th>AAA</th>
+                  <th>BBB</th>
+                  <th>CCC</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Item 1</td>
+                  <td>Item 1</td>
+                  <td>Item 1</td>
+                </tr>
+                <tr>
+                  <td>Item 2</td>
+                  <td>Item 2</td>
+                  <td>Item 2</td>
+                </tr>
+                <tr>
+                  <td>Item 3</td>
+                  <td>Item 3</td>
+                  <td>Item 3</td>
+                </tr>
+                <tr>
+                  <td>Item 4</td>
+                  <td>Item 4</td>
+                  <td>Item 4</td>
+                </tr>
+                <tr>
+                  <td>Item 5</td>
+                  <td>Item 5</td>
+                  <td>Item 5</td>
+                </tr>
+              </tbody>
+            </table>
+            <pre class="--code">// pug
+table.SampleTable
+
+// sass
+table.SampleTable
+  @extend .#{$modif_prefix}striped
+  @extend .#{$modif_prefix}hoverd
+  width: 100%
+
+  thead
+    @extend .#{$utils_prefix}Base
+    th
+      border: solid 2px white
 }
 </pre>
           </div>
           <style>
             .tbl-box {
             }
-            .myTable thead {
+            .my.Table thead {
               color: white;
               background: black;
             }
-            .myTable th {
+            .my.Table th {
               border: solid 2px white;
             }
           </style>

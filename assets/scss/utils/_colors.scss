@@ -152,3 +152,7 @@ $cbc: (
 .#{$utils_prefix}Base   { color: white; background: $color-bg }
 .#{$utils_prefix}Main   { color: white; background: $color-main}
 .#{$utils_prefix}Accent { color: white; background: $color-accent}
+
+.#{$utils_prefix}base   { color: $color-bg }
+.#{$utils_prefix}main   { color: $color-main}
+.#{$utils_prefix}accent { color: $color-accent}
