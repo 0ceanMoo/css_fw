@@ -3,6 +3,15 @@ $utils_prefix : "__";
 $modif_prefix : "--";
 
 // ===============================================
+//  breakpoint
+// ===============================================
+$breakpoint_mobile:     400px;
+$breakpoint_phablet:    600px;
+$breakpoint_tablet:     900px;
+$breakpoint_desktop:    1200px;
+$breakpoint_desktop-hd: 1800px;
+
+// ===============================================
 //  colors
 //  https://clrs.cc/
 // ===============================================
