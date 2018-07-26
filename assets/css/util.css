@@ -1906,46 +1906,46 @@ input[type="text"]:invalid, input[type="password"]:invalid, input[type="email"]:
   background: white;
 }
 
-._Btn.--red, ._Btn.--error {
+._Btn.--red {
   border-color: #f33;
   color: #f33;
   background: white;
 }
 
-._Btn.--red:hover, ._Btn.--error:hover {
+._Btn.--red:hover {
   color: white;
   background: #f33;
 }
 
-._Btn.--Red, ._Btn.--Error {
+._Btn.--Red {
   border-color: #f33;
   color: white;
   background: #f33;
 }
 
-._Btn.--Red:hover, ._Btn.--Error:hover {
+._Btn.--Red:hover {
   color: #f33;
   background: white;
 }
 
-._Btn.--blue, ._Btn.--info {
+._Btn.--blue {
   border-color: #66C;
   color: #66C;
   background: white;
 }
 
-._Btn.--blue:hover, ._Btn.--info:hover {
+._Btn.--blue:hover {
   color: white;
   background: #66C;
 }
 
-._Btn.--Blue, ._Btn.--Info {
+._Btn.--Blue {
   border-color: #66C;
   color: white;
   background: #66C;
 }
 
-._Btn.--Blue:hover, ._Btn.--Info:hover {
+._Btn.--Blue:hover {
   color: #66C;
   background: white;
 }
@@ -1972,68 +1972,68 @@ input[type="text"]:invalid, input[type="password"]:invalid, input[type="email"]:
   background: white;
 }
 
-._Btn.--teal, ._Btn.--ok {
+._Btn.--teal {
   border-color: #399;
   color: #399;
   background: white;
 }
 
-._Btn.--teal:hover, ._Btn.--ok:hover {
+._Btn.--teal:hover {
   color: white;
   background: #399;
 }
 
-._Btn.--Teal, ._Btn.--Ok {
+._Btn.--Teal {
   border-color: #399;
   color: white;
   background: #399;
 }
 
-._Btn.--Teal:hover, ._Btn.--Ok:hover {
+._Btn.--Teal:hover {
   color: #399;
   background: white;
 }
 
-._Btn.--yellow, ._Btn.--warn {
+._Btn.--yellow {
   border-color: #fd0;
   color: #983;
   background: white;
 }
 
-._Btn.--yellow:hover, ._Btn.--warn:hover {
-  color: white;
+._Btn.--yellow:hover {
+  color: black;
   background: #fd0;
 }
 
-._Btn.--Yellow, ._Btn.--Warn {
+._Btn.--Yellow {
   border-color: #fd0;
   color: black;
   background: #fd0;
 }
 
-._Btn.--Yellow:hover, ._Btn.--Warn:hover {
+._Btn.--Yellow:hover {
   color: #983;
   background: white;
 }
 
-._Btn.--pink, ._Btn.--ng {
+._Btn.--pink {
   border-color: #f99;
   color: #c66;
   background: white;
 }
 
-._Btn.--pink:hover, ._Btn.--ng:hover {
-  color: white;
+._Btn.--pink:hover {
+  color: black;
   background: #f99;
 }
 
-._Btn.--Pink, ._Btn.--Ng {
+._Btn.--Pink {
   border-color: #f99;
   color: black;
   background: #f99;
 }
 
-._Btn.--Pink:hover, ._Btn.--Ng:hover {
+._Btn.--Pink:hover {
   color: #c66;
   background: white;
 }
@@ -2058,6 +2058,116 @@ input[type="text"]:invalid, input[type="password"]:invalid, input[type="email"]:
 ._Btn.--Navy:hover {
   color: #036;
   background: white;
+}
+
+._Btn.--info {
+  border-color: #66C;
+  color: #66C;
+  background: white;
+}
+
+._Btn.--info:hover {
+  color: white;
+  background: #66C;
+}
+
+._Btn.--Info {
+  border-color: #66C;
+  color: white;
+  background: #66C;
+}
+
+._Btn.--Info:hover {
+  color: #66C;
+  background: white;
+}
+
+._Btn.--warn {
+  border-color: #fd0;
+  color: #983;
+  background: white;
+}
+
+._Btn.--warn:hover {
+  color: black;
+  background: #fd0;
+}
+
+._Btn.--Warn {
+  border-color: #fd0;
+  color: black;
+  background: #fd0;
+}
+
+._Btn.--Warn:hover {
+  color: #fd0;
+  background: black;
+}
+
+._Btn.--error {
+  border-color: #f33;
+  color: #f33;
+  background: white;
+}
+
+._Btn.--error:hover {
+  color: white;
+  background: #f33;
+}
+
+._Btn.--Error {
+  border-color: #f33;
+  color: white;
+  background: #f33;
+}
+
+._Btn.--Error:hover {
+  color: #f33;
+  background: white;
+}
+
+._Btn.--ok {
+  border-color: #399;
+  color: #399;
+  background: white;
+}
+
+._Btn.--ok:hover {
+  color: white;
+  background: #399;
+}
+
+._Btn.--Ok {
+  border-color: #399;
+  color: white;
+  background: #399;
+}
+
+._Btn.--Ok:hover {
+  color: #399;
+  background: white;
+}
+
+._Btn.--ng {
+  border-color: #f99;
+  color: #c66;
+  background: white;
+}
+
+._Btn.--ng:hover {
+  color: black;
+  background: #f99;
+}
+
+._Btn.--Ng {
+  border-color: #f99;
+  color: black;
+  background: #f99;
+}
+
+._Btn.--Ng:hover {
+  color: #f99;
+  background: black;
 }
 
 /* ==============================================
